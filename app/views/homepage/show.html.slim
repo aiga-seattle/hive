@@ -1,0 +1,25 @@
+== image_tag "aiga_seattle.png", :alt => 'AIGA Seattle'
+
+h1.uppercase Hive Is Coming
+h2
+  strong.uppercase June 20 & 21, 2014
+  |  at&nbsp;
+  span.uppercase Town Hall
+
+.row
+  .col-sm-6
+    section#subscription-form
+      == render 'subscriptions/new', subscription: @subscription
+
+  .col-sm-6
+    section
+      h3 Call for speakers!
+      p Have a specific design/technology topic you feel needs discussion?
+
+.sponsored-by.uppercase
+  | Sponsored by
+  == image_tag "google.png"
+
+.sponsorship-opportunities
+  | Interested in sponsorship opportunities? 
+  == link_to 'Contact us.', '#'

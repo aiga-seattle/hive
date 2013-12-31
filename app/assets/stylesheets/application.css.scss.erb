@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap";
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #dbda4a;
+  background-image: url(<%= asset_path 'top_pattern.png' %>);
+  background-repeat: repeat-x;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+
+  max-width: 960px;
+
+  margin: 0 auto -240px;
+  padding: 80px 16px 0;
+  
+  .push {
+    height: 240px;
+  }
+}
+
+.footer {
+  position: relative;
+  height: 240px;
+
+  .background {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    max-height: 240px;
+  }
+}
+
+
+
+
+h1 {
+  color: white;
+  
+  font-size: 120px;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 36px;
+  
+  strong {
+    font-size: 44px;
+  }  
+}
+
+section {
+  padding: 32px;
+  margin-bottom: 32px;
+  border-radius: 16px;
+  
+  background-color: #e6e581;
+  
+  
+  h3 {
+    margin-top: 0;
+
+    font-weight: bold;
+    font-size: 20px;
+    color: #e45b00;
+  }
+}
+
+.sponsored-by {
+  margin-bottom: 24px;
+  
+  img {
+    margin-left: 32px;
+  }
+}
+
+.sponsorship-opportunities {
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
