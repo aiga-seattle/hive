@@ -1,25 +1,25 @@
-== image_tag "aiga_seattle.png", :alt => 'AIGA Seattle'
+== image_tag "aiga_seattle.png", :alt => 'AIGA Seattle', :class => 'spacing-loose'
 
-h1.uppercase Hive Is Coming
-h2
+h1.uppercase.color-white.bold Hive Is Coming
+h2.color-white
   strong.uppercase June 20 & 21, 2014
   |  at&nbsp;
   span.uppercase Town Hall
 
-.row
+.row.spacing-loose
   .col-sm-6
-    section#subscription-form
+    section#subscription-form.background-green.rounded
       == render 'subscriptions/new', subscription: @subscription
 
   .col-sm-6
-    section
-      h3 Call for speakers!
+    section.background-green.rounded
+      h3.color-orange.bold Call for speakers!
       p Have a specific design/technology topic you feel needs discussion?
 
-.sponsored-by.uppercase
+.sponsored-by.uppercase.spacing-loose
   | Sponsored by
   == image_tag "google.png"
 
-.sponsorship-opportunities
+div
   | Interested in sponsorship opportunities? 
-  == link_to 'Contact us.', '#'
+  == link_to 'Contact us.', '#', :class => 'underlined color-black'
