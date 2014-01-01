@@ -48,4 +48,4 @@ end
 gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'simple_form'
-
+gem 'rails_12factor'
