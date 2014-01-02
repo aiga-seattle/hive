@@ -1,20 +1,27 @@
 == image_tag "aiga_seattle.png", :alt => 'AIGA Seattle', :class => 'spacing-loose'
 
 h1.uppercase.color-white.bold Hive Is Coming
-h2.color-white
+h2.color-white.spacing-loose
   strong.uppercase June 20 & 21, 2014
   |  at&nbsp;
   span.uppercase Town Hall
 
-.row.spacing-loose
+.row
   .col-sm-6
-    section#subscription-form.background-green.rounded
+    section#subscription-form.background-green.rounded.spacing-loose
       == render 'subscriptions/new', subscription: @subscription
 
   .col-sm-6
-    section.background-green.rounded
+    section.background-green.rounded.spacing-loose
       h3.color-orange.bold Call for speakers!
-      p Have a specific design/technology topic you feel needs discussion?
+      p
+        | Have a specific design/technology topic you feel needs discussion?
+          We'll have an open call for speakers beginning XX.
+      p.bold
+        | Please fill out our 
+        == link_to 'proposal form', '#', :class => 'underlined color-black'
+        |  for consideration.
+          Thank you&mdash;we'll see you in June!
 
 .sponsored-by.uppercase.spacing-loose
   | Sponsored by
