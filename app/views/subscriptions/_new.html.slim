@@ -1,12 +1,12 @@
 / subscription
 
-h3.color-orange.bold Sign up for the latest updates.
+h3.color-orange.bold Sign up for the latest updates
 p Want to know the latest Hive news? Get up-to-date announcements on speakers, tickets and more.
 == simple_form_for subscription, remote: true, html: {class: 'form-inline'} do |f|
   .row
-    .col-sm-9.col-xs-9.flush-right
+    .col-sm-9.col-xs-8.flush-right
       = f.input_field :email_address, class: 'form-control rounded-left'
-    .col-sm-3.col-xs-3.flush-left
+    .col-sm-3.col-xs-4.flush-left
       = f.button :submit, class: 'btn rounded-right uppercase color-white background-blue'
   = f.full_error :email_address
 end
