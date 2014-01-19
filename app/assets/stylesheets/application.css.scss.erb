@@ -17,6 +17,7 @@
 body, h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
 }
 
 .form-control {
@@ -73,6 +74,14 @@ body, h1, h2, h3, h4, h5, h6,
 
 .rounded-right {
   border-radius: 0 16px 16px 0;
+}
+
+.spacing-none {
+  margin-bottom: 0;
+}
+
+.spacing-medium {
+  margin-bottom: 12px;
 }
 
 .spacing-loose {
@@ -186,9 +195,14 @@ section {
 }
 
 .sponsored-by {
+  label {
+    font-weight: normal;
+    margin-right: 32px;
+    margin-bottom: 8px
+  }
   
   img {
-    margin-left: 32px;
+    margin: 2px 32px 8px 0;
   }
   
 }
