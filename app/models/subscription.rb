@@ -19,7 +19,8 @@ class Subscription
 
   def save
     return true if @persisted
-    
+    return false unless valid?
+
     begin
       mailchimp_client.lists.subscribe(mailchimp_list_id, {'email' => email_address})
       @persisted = true
@@ -28,7 +29,7 @@ class Subscription
     rescue Mailchimp::Error => exception
       errors.add(:base, 'An unknown error occurred')
     end
-    
+
     return @persisted
   end
 

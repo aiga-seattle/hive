@@ -51,3 +51,8 @@ gem 'simple_form'
 gem 'rails_12factor'
 gem 'newrelic_rpm'
 gem 'mailchimp-api', require: 'mailchimp'
+
+group :test do
+  gem 'mocha'
+  gem 'shoulda-context'
+end
