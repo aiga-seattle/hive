@@ -7,11 +7,12 @@ p.spacing-loose
   .row.spacing-medium
     .col-sm-1
 
-    .col-sm-10.row
-      .col-sm-9.col-xs-8.flush-right
-        = f.input_field :email_address, class: 'form-control rounded-left input-lg'
-      .col-sm-3.col-xs-4.flush-left
-        = f.button :submit, class: 'btn rounded-right uppercase color-white background-blue full-width bold input-lg'
+    .col-sm-10
+      .row
+        .col-sm-9.col-xs-8.flush-right
+          = f.input_field :email_address, class: 'form-control rounded-left input-lg'
+        .col-sm-3.col-xs-4.flush-left
+          = f.button :submit, class: 'btn rounded-right uppercase color-white background-blue full-width bold input-lg'
 
     .col-sm-1
 
