@@ -24,12 +24,26 @@ body, h1, h2, h3, h4, h5, h6,
   border: none;
 }
 
+.help-inline {
+  color: #e45b00;
+}
+
+
+
 .flush-right {
   padding-right: 0;
 }
 
 .flush-left {
   padding-left: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .bold {
@@ -117,7 +131,7 @@ body {
 
   margin: 0 auto (-$footer-height);
   padding: 80px 16px 0;
-  
+
   .push {
     height: $footer-height;
   }
@@ -147,7 +161,7 @@ body {
 
   .footer {
     height: $footer-height-mobile;
-    
+
     .background {
       max-height: $footer-height-mobile;
     }
@@ -164,7 +178,7 @@ h1 {
 h2 {
   font-weight: normal;
   font-size: 36px;
-  
+
   strong {
     font-size: 44px;
   }  
@@ -177,7 +191,7 @@ h2 {
 
   h2 {
     font-size: 22px;
-    
+
     strong {
       font-size: 28px;
     }
@@ -185,24 +199,47 @@ h2 {
 }
 
 section {
-  padding: 32px;
-  
+  padding: 8px;
+  font-size: 20px;
+
   h3 {
     margin-top: 0;
 
-    font-size: 20px;
+    font-size: 28px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    font-size: 14px;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    .btn {
+      font-size: 14px;
+    }
   }
 }
 
 .sponsored-by {
   label {
     font-weight: normal;
-    margin-right: 32px;
+    margin-right: 16px;
     margin-bottom: 8px
   }
-  
+
   img {
-    margin: 2px 32px 8px 0;
+    margin: 2px 16px 8px 16px;
   }
-  
+
+  img:last-child {
+    margin-right: 0;
+  }
+
 }

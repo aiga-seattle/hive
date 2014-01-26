@@ -1,32 +1,27 @@
-== image_tag "aiga_seattle@2x.png", :width => 177, :height => 60, :alt => 'AIGA Seattle', :class => 'spacing-medium'
+.logo.centered
+  == image_tag "aiga_seattle@2x.png", :width => 177, :height => 60, :alt => 'AIGA Seattle', :class => 'spacing-medium'
 
-h1.uppercase.color-white.bold.spacing-none Hive Is Coming
-h2.color-white.spacing-loose
+h1.uppercase.color-white.bold.spacing-none.centered Hive Is Coming
+h2.color-white.spacing-loose.centered
   strong.uppercase June 20 & 21, 2014
   |  at&nbsp;
   span.uppercase Town Hall Seattle
 
-.row
-  .col-sm-6
-    section#subscription-form.background-green.rounded.spacing-loose
+.row.centered.spacing-loose
+  .col-sm-2
+
+  .col-sm-8
+    section#subscription-form.rounded.spacing-loose
       == render 'subscriptions/new', subscription: @subscription
 
-  .col-sm-6
-    section.background-green.rounded.spacing-loose
-      h3.color-orange.bold Call for speakers
-      p
-        | Have a specific design or technology topic you feel needs discussion? Consider speaking at the HIVE Conference!
-      p.bold
-        | Please fill out our 
-        == link_to 'proposal form.', 'https://docs.google.com/forms/d/1mnnHrso6AHfOWIj-_B9HO7T33iIyL_xo9kTHVmQHGA0/viewform', :class => 'underlined color-black'
-        |  Thank you&mdash;we'll see you in June!
+  .col-sm-2
 
-.sponsored-by.uppercase.spacing-loose
+.sponsored-by.uppercase.spacing-loose.centered
   label Sponsored by
   == image_tag 'substantial@2x.png', :width => 182, :height => 16, :alt => 'Substantial'
   == image_tag 'google@2x.png', :width => 104, :height => 35, :alt => 'Google'
 
-div
+.centered
   | Interested in sponsorship opportunities? 
   | See our 
   == link_to 'sponsorship packet', 'https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf', :class => 'underlined color-black'
