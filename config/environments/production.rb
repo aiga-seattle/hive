@@ -77,4 +77,10 @@ Hive::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Configure Google Analytics tracking, if applicable
+  if google_analytics_property_id = ENV['GOOGLE_ANALYTICS_PROPERTY_ID']
+    config.middleware.use Rack::GoogleAnalytics, :tracker => google_analytics_property_id
+  end
+
 end
