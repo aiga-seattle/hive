@@ -8,6 +8,7 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require font-awesome
  *= require_self
  *= require_tree .
  */
@@ -27,8 +28,6 @@ body, h1, h2, h3, h4, h5, h6,
 .help-inline {
   color: #e45b00;
 }
-
-
 
 .flush-right {
   padding-right: 0;
@@ -54,40 +53,8 @@ body, h1, h2, h3, h4, h5, h6,
   text-transform: uppercase;
 }
 
-.color-white {
-  color: white;
-}
-
-.color-orange {
-  color: #e45b00;
-}
-
-.color-black {
-  color: #333;
-}
-
-.background-green {
-  background-color: #e6e581;
-}
-
-.background-blue {
-  background-color: #009999;
-}
-
 .underlined {
   text-decoration: underline;
-}
-
-.rounded {
-  border-radius: 20px;
-}
-
-.rounded-left {
-  border-radius: 20px 0 0 20px;
-}
-
-.rounded-right {
-  border-radius: 0 20px 20px 0;
 }
 
 .spacing-none {
@@ -108,137 +75,38 @@ body, h1, h2, h3, h4, h5, h6,
 
 
 
-$footer-height: 240px;
-$footer-height-mobile: 150px;
-
-html, body {
-  height: 100%;
+.teal {
+  color: #1aaaac;
 }
 
-body {
-  background-color: #dbda4a;
-  background-image: url(<%= asset_path 'top_pattern@2x.png' %>);
-  background-size: 49px 44px;
-  background-repeat: repeat-x;
+.coral {
+  color: #fc5938;
 }
 
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-
-  max-width: 960px;
-
-  margin: 0 auto (-$footer-height);
-  padding: 80px 16px 0;
-
-  .push {
-    height: $footer-height;
-  }
+.black {
+  color: #2b2b2b;
 }
 
-.footer {
-  position: relative;
-  height: $footer-height;
-
-  .background {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    max-height: $footer-height;
-  }
+.white {
+  color: #e4e4e4;
 }
 
-
-@media (max-width: 767px) {
-  .wrapper {
-    margin-bottom: -$footer-height-mobile;
-
-    .push {
-      height: $footer-height-mobile;
-    }
-  }
-
-  .footer {
-    height: $footer-height-mobile;
-
-    .background {
-      max-height: $footer-height-mobile;
-    }
-  }
+.bg-teal {
+  background-color: #1aaaac;
 }
 
-
-
-
-h1 {
-  font-size: 120px;
+.bg-coral {
+  background-color: #fc5938;
 }
 
-h2 {
-  font-weight: normal;
-  font-size: 36px;
-
-  strong {
-    font-size: 44px;
-  }  
+.bg-black {
+  background-color: #141416;
 }
 
-@media (max-width: 767px) {
-  h1 {
-    font-size: 68px;
-  }
-
-  h2 {
-    font-size: 22px;
-
-    strong {
-      font-size: 28px;
-    }
-  }
+.bg-white {
+  background-color: #fff;
 }
 
-section {
-  padding: 8px;
-  font-size: 20px;
-
-  h3 {
-    margin-top: 0;
-
-    font-size: 28px;
-  }
-
-  .btn {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 767px) {
-  section {
-    font-size: 14px;
-
-    h3 {
-      font-size: 20px;
-    }
-
-    /* fake regular bootstrap inputs */
-    .input-lg {
-      height: 34px;
-      padding: 6px 12px;
-      font-size: 14px;
-      line-height: 1.428571429;
-    }
-  }
-}
-
-.sponsored-by {
-  label {
-    font-weight: normal;
-    margin: 0 16px 12px 16px;
-  }
-
-  img {
-    margin: 2px 16px 12px 16px;
-  }
-
+.translucent {
+  opacity: 0.75;
 }

@@ -1,13 +1,68 @@
-.logo.centered
-  == image_tag "aiga_seattle@2x.png", :width => 177, :height => 60, :alt => 'AIGA Seattle', :class => 'spacing-loose'
+#main
+  #date-location.uppercase
+    | June 20 & 21, 2014 / Seattle, Washington
 
-h1.uppercase.color-white.bold.spacing-none.centered Hive Is Coming
-h2.color-white.spacing-loose.centered
-  strong.uppercase June 20 & 21, 2014
-  |  at&nbsp;
-  span.uppercase Town Hall Seattle
+  .btn-group-lg.uppercase
+    == link_to "Register now", "#", class: "btn bg-coral white"
+    == link_to "Speak at Hive", "#", class: "btn bg-teal white"
 
-.row.centered.spacing-loose
+  #aiga-lockup.bg-white.translucent
+    | presented by 
+    == image_tag "aiga_seattle@2x.png", width: 177, height: 60, alt: "AIGA Seattle", class: "spacing-loose"
+
+
+#synopsis.bg-white
+  h2.uppercase.teal
+    | HIVE explores and highlights the value of design in technology.
+  
+  p.black
+    | Design thinking propels the most exciting products hitting the market today 
+    | and users demand front-end UI and back-end engineering partner to create a 
+    | seamless user experience. Join us at HIVE and explore the crossroads of 
+    | design and technology.
+
+  #share
+    i.fa.fa-twitter.white
+    i.fa.fa-facebook.white
+
+
+#location.bg-coral
+  h2.uppercase.black
+    | Venue and Location
+
+  p.white
+    | HIVE will be held at Town Hall, Seattle&rquot;s community cultural center. 
+    | 1119 Eighth Avenue / Seattle, WA 98101
+
+  .btn-group-lg.uppercase
+    == link_to "Open in Google Maps", "#", class: "btn white"
+
+
+#sponsors.bg-white
+  h2.uppercase.black
+    | Our Generous Sponsors
+
+  #sponsor-logos
+    == link_to (image_tag "substantial@2x.png", width: 182, height: 16, alt: "Substantial"), "http://substantial.com/"
+    == link_to (image_tag "google@2x.png", width: 104, height: 35, alt: "Google"), "http://www.google.com/about/company/"
+
+  .btn-group-lg.uppercase
+    == link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn white"
+
+
+#speakers.bg-teal
+  h2.uppercase.black
+    | Call for Speakers!
+
+  p.white
+    | Have a specific design or technology topic you feel needs discussion?
+    | Submit a proposal and let your voice be heard.
+
+  .btn-group-lg.uppercase
+    == link_to "Speak at HIVE", "#", class: "btn white"
+
+
+#mailing-list.row.centered.spacing-loose
   .col-sm-2
 
   .col-sm-8
@@ -16,16 +71,8 @@ h2.color-white.spacing-loose.centered
 
   .col-sm-2
 
-.sponsored-by.uppercase.spacing-loose.centered
-  label Sponsored by
-  == link_to (image_tag 'substantial@2x.png', :width => 182, :height => 16, :alt => 'Substantial'), 'http://substantial.com/'
-  == link_to (image_tag 'google@2x.png', :width => 104, :height => 35, :alt => 'Google'), 'http://www.google.com/about/company/'
 
-.centered
-  | Interested in sponsorship opportunities? 
-  | See our 
-  == link_to 'sponsorship packet', 'https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf', :class => 'underlined color-black'
-  
-  |  or 
-  == link_to 'contact us.', 'mailto:hive@aigaseattle.org', :class => 'underlined color-black'
-  
+#links
+  i.fa.fa-twitter.white
+  i.fa.fa-youtube.white
+

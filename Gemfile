@@ -52,6 +52,7 @@ gem 'rails_12factor'
 gem 'newrelic_rpm'
 gem 'mailchimp-api', require: 'mailchimp'
 gem 'rack-google-analytics'
+gem 'font-awesome-sass'
 
 group :test do
   gem 'mocha'
