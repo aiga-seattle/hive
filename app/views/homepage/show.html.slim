@@ -1,13 +1,17 @@
 #main
-  #date-location.uppercase
-    | June 20 & 21, 2014 / Seattle, Washington
+  img src="//placekitten.com/600/180" class="spacing-extra-loose"
 
-  .btn-group-lg.uppercase
-    == link_to "Register now", "#", class: "btn bg-coral white"
-    == link_to "Speak at Hive", "#", class: "btn bg-teal white"
+  #date-location.uppercase.sans-serif.padding-medium.spacing-extra-loose
+    strong June 20 & 21, 2014 
+    | / Seattle, Washington
 
-  #aiga-lockup.bg-white.translucent
-    | presented by 
+  .btn-group-lg.uppercase.spacing-loose
+    == link_to "Register now", "#", class: "btn bg-coral white side-spaced spacing-medium"
+    == link_to "Speak at Hive", "#", class: "btn bg-teal white side-spaced spacing-medium"
+
+  #aiga-lockup.black.bg-white.translucent
+    em.sans-serif
+      | presented by 
     == image_tag "aiga_seattle@2x.png", width: 177, height: 60, alt: "AIGA Seattle", class: "spacing-loose"
 
 
