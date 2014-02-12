@@ -55,6 +55,8 @@ p {
   font-weight: bold;
   
   @extend .uppercase;
+  @extend .white;
+  @extend .border-white;
 }
 
 .btn-group-lg > .btn {
@@ -197,6 +199,10 @@ font-family: 'Fjord One', serif;
   border: 4px solid #f4f4f4;
 }
 
+.border-none {
+  border: none;
+}
+
 .translucent {
   opacity: 0.75;
 }
@@ -205,6 +211,15 @@ font-family: 'Fjord One', serif;
 /* element specific styles */
 #main {
   padding-top: 256px;
+
+  .btn-group-lg {
+
+    > .btn {
+      @extend .spacing-medium;
+      @extend .side-spaced;
+      @extend .border-none;
+    }
+  }
 }
 
 #date-location {
