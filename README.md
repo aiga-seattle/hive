@@ -24,9 +24,13 @@ Before deploying to Heroku, you'll need to set up the remote repositories:
 ### Deploying to Heroku
 With the remotes configured, you can deploy to the staging and production servers.
 
-To deploy to the staging server:
+To deploy master to the staging server:
 
     git push heroku-staging master
+
+or to deploy a branch to the staging server:
+
+    git push heroku-staging yourbranch:master
 
 To deploy to the production server:
 
