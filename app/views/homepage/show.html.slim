@@ -11,11 +11,11 @@
     == image_tag "aiga_seattle@2x.png", width: 177, height: 60, alt: "AIGA Seattle", class: "spacing-loose"
 
 
-#synopsis.bg-white
+#synopsis.bg-white.padding-extra-loose
   h2.uppercase.teal
     | HIVE explores and highlights the value of design in technology.
   
-  p.black
+  p.black.spacing-loose
     | Design thinking propels the most exciting products hitting the market today 
     | and users demand front-end UI and back-end engineering partner to create a 
     | seamless user experience. Join us at HIVE and explore the crossroads of 
@@ -26,43 +26,50 @@
     i.fa.fa-facebook.white
 
 
-#location.bg-coral
+#location.bg-coral.padding-extra-loose
   h2.uppercase.black
     | Venue and Location
 
-  p.white
-    | HIVE will be held at Town Hall, Seattle&rquot;s community cultural center. 
+  p.white.spacing-loose
+    | HIVE will be held at Town Hall, Seattle‘s community cultural center. 
     | 1119 Eighth Avenue / Seattle, WA 98101
 
   .btn-group-lg.uppercase
-    == link_to "Open in Google Maps", "#", class: "btn white"
+    == link_to "Open in Google Maps", "#", class: "btn white border-white"
+
+#location-images.row
+  .col-sm-6.padding-none
+    img src="http://placekitten.com/640/480" width="100%"
+
+  .col-sm-6.padding-none
+    img src="http://placekitten.com/1280/960" width="100%"
 
 
-#sponsors.bg-white
+#sponsors.bg-white.padding-extra-loose
   h2.uppercase.black
     | Our Generous Sponsors
 
-  #sponsor-logos
+  #sponsor-logos.spacing-loose
     == link_to (image_tag "substantial@2x.png", width: 182, height: 16, alt: "Substantial"), "http://substantial.com/"
     == link_to (image_tag "google@2x.png", width: 104, height: 35, alt: "Google"), "http://www.google.com/about/company/"
 
   .btn-group-lg.uppercase
-    == link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn white"
+    == link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn white border-white"
 
 
-#speakers.bg-teal
+#speakers.bg-teal.padding-loose
   h2.uppercase.black
     | Call for Speakers!
 
-  p.white
+  p.white.spacing-loose
     | Have a specific design or technology topic you feel needs discussion?
     | Submit a proposal and let your voice be heard.
 
   .btn-group-lg.uppercase
-    == link_to "Speak at HIVE", "#", class: "btn white"
+    == link_to "Speak at HIVE", "#", class: "btn white border-white"
 
 
-#mailing-list.row.centered.spacing-loose
+#mailing-list.row.centered.padding-extra-loose
   .col-sm-2
 
   .col-sm-8
