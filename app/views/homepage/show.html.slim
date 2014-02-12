@@ -11,7 +11,7 @@
 
   #aiga-lockup.black.bg-white.translucent.padding-medium
     em.small.side-spaced presented by 
-    == image_tag "aiga_seattle@2x.png", width: 148, height: 50, alt: "AIGA Seattle"
+    == link_to (image_tag "aiga_seattle@2x.png", width: 148, height: 50, alt: "AIGA Seattle"), "http://www.aigaseattle.org/"
 
 
 #synopsis.bg-white.padding-extra-loose
@@ -39,7 +39,7 @@
     small 1119 Eighth Avenue / Seattle, WA 98101
 
   .btn-group-lg
-    == link_to "Open in Google Maps", "#", class: "btn"
+    == link_to "Open in Google Maps", "http://maps.google.com/maps?cid=11186890733716328492", class: "btn", target: "_blank"
 
 #location-images.row.margin-none
   .col-sm-6.padding-none
@@ -58,7 +58,7 @@
     == link_to (image_tag "google@2x.png", width: 104, height: 35, alt: "Google"), "http://www.google.com/about/company/"
 
   .btn-group-lg
-    == link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn"
+    == link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn", target: "_blank"
 
 
 #speakers.bg-teal.padding-extra-loose
@@ -85,6 +85,9 @@
 
 
 #links
-  i.fa.fa-twitter.white
-  i.fa.fa-youtube.white
+  == link_to "https://twitter.com/HIVESeattle", target: "_blank" do
+    i.fa.fa-twitter.white
+
+  == link_to "http://www.youtube.com/user/HIVESeattle", target: "_blank" do
+    i.fa.fa-youtube.white
 
