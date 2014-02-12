@@ -1,7 +1,6 @@
 / subscription
 
-em.sans-serif
-  | Get the latest updates from HIVE
+em Get the latest updates from HIVE
 
 == simple_form_for subscription, remote: true, html: {class: 'form-inline'} do |f|
   .row.spacing-medium
@@ -10,9 +9,9 @@ em.sans-serif
     .col-sm-10
       .row
         .col-sm-9.col-xs-8.flush-right
-          = f.input_field :email_address, class: 'form-control rounded-left input-lg'
+          = f.input_field :email_address, class: 'form-control input-lg'
         .col-sm-3.col-xs-4.flush-left
-          = f.button :submit, class: 'btn rounded-right uppercase color-white background-blue full-width bold input-lg'
+          = f.button :submit, class: 'btn white full-width bold input-lg'
 
     .col-sm-1
 
