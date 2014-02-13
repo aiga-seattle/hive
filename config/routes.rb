@@ -6,6 +6,7 @@ Hive::Application.routes.draw do
   root 'homepage#show'
 
   resources :subscriptions, only: :create
+  resources :proposals, only: [:new, :create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
