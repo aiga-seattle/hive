@@ -8,8 +8,10 @@ class Proposal < ActiveRecord::Base
   validates :submitted_elsewhere, inclusion: {in: [true, false]}
 
   validates :speaker_name, presence: true
-  validates :speaker_email, presence: true
+  validates :speaker_email, presence: true, format: /.+@.+/
   validates :speaker_city, presence: true
   validates :speaker_bio, presence: true
+
+  serialize :domain
 
 end
