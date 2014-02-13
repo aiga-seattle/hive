@@ -13,6 +13,14 @@
  *= require_tree .
  */
 
+$border-radius-base: 0;
+$border-radius-large: 0;
+
+$font-family-sans-serif: 'Titillium Web', sans-serif;
+$font-family-serif: 'Fjord One', serif;
+
+$headings-font-family: $font-family-sans-serif;
+
 @import "bootstrap";
 
 
@@ -26,8 +34,6 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  @extend .sans-serif;
-  
   font-weight: bold;
   margin: 0 0 24px 0;
 }
@@ -51,7 +57,8 @@ p {
 }
 
 .btn {
-  font-family: 'Titillium Web', sans-serif;
+  @extend .sans-serif;
+  
   font-weight: bold;
   
   @extend .uppercase;
@@ -60,7 +67,6 @@ p {
 }
 
 .btn-group-lg > .btn {
-  border-radius: 0;
   width: 240px;
   white-space: normal;
   padding: 16px;
@@ -94,11 +100,11 @@ em {
 }
 
 .serif {
-font-family: 'Fjord One', serif;
+  font-family: $font-family-serif;
 }
 
 .sans-serif {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: $font-family-sans-serif;
 }
 
 .flush-right {
