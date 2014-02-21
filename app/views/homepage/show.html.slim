@@ -25,10 +25,16 @@
     | design and technology.
 
   #share
-    i.fa.fa-twitter.social-logo
+    = link_to "https://twitter.com/share?url=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank" do
+      i.fa.fa-twitter.social-logo
+    end
+    
     em.small.black.padding-horizontal-extra-loose
       | « &nbsp;share&nbsp; »
-    i.fa.fa-facebook.social-logo
+
+    = link_to "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank" do
+      i.fa.fa-facebook.social-logo
+    end
 
 
 #location.bg-coral.padding-extra-loose
@@ -78,13 +84,13 @@
 
 #mailing-list.padding-extra-loose
   .row
-    .col-sm-2
+    .col-sm-3
 
-    .col-sm-8
+    .col-sm-6
       section#subscription-form.padding-medium
         == render 'subscriptions/new', subscription: @subscription
 
-    .col-sm-2
+    .col-sm-3
 
   p
     em.small Get the latest updates from HIVE
