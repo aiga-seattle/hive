@@ -1,5 +1,5 @@
 #main
-  img src="//placekitten.com/1200/360" width="600" height="180" class="spacing-extra-loose"
+  = image_tag "hive@2x.png", alt: "HIVE", id: "logo", class: "spacing-extra-loose"
 
   #date-location.uppercase.sans-serif.padding-medium.spacing-extra-loose
     strong June 20 & 21, 2014 
@@ -11,7 +11,7 @@
 
   #aiga-lockup.black.bg-white.translucent.padding-medium
     em.small.side-spaced presented by 
-    = link_to (image_tag "aiga_seattle@2x.png", width: 148, height: 50, alt: "AIGA Seattle"), "http://www.aigaseattle.org/"
+    = link_to (image_tag "aiga_seattle.svg", width: 151, height: 51, alt: "AIGA Seattle"), "http://www.aigaseattle.org/"
 
 
 #synopsis.bg-white.padding-extra-loose
@@ -43,10 +43,10 @@
 
 #location-images.row.margin-none
   .col-sm-6.padding-none
-    img src="http://placekitten.com/640/480" width="100%"
+    = image_tag "town_hall_seattle@2x.png", alt: "Town Hall Seattle", width: "100%"
 
   .col-sm-6.padding-none
-    img src="http://placekitten.com/1280/960" width="100%"
+    = image_tag "town_hall_seattle@2x.png", alt: "Town Hall Seattle", width: "100%"
 
 
 #sponsors.bg-white.padding-extra-loose
@@ -85,6 +85,9 @@
 
 
 #links
+  p
+    em Get the latest updates from HIVE
+
   = link_to "https://twitter.com/HIVESeattle", target: "_blank" do
     i.fa.fa-twitter.white
   end

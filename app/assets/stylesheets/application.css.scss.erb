@@ -27,6 +27,8 @@ $headings-font-family: $font-family-sans-serif;
 /* reset bootstrap styles */
 body {
   @extend .serif;
+  @extend .bg-black;
+  @extend .white;
   
   text-align: center;
   font-size: 24px;
@@ -66,7 +68,7 @@ p {
 .btn-group-lg > .btn {
   width: 240px;
   white-space: normal;
-  padding: 16px;
+  @extend .padding-medium;
 }
 
 .form-control {
@@ -192,6 +194,10 @@ em {
   color: #2b2b2b;
 }
 
+.light-gray {
+  color: #b7b7b7;
+}
+
 .white {
   color: #f4f4f4;
 }
@@ -206,6 +212,10 @@ em {
 
 .bg-black {
   background-color: #141416;
+}
+
+.bg-gray {
+  background-color: #434345;
 }
 
 .bg-white {
@@ -228,6 +238,18 @@ em {
 /* element specific styles */
 #main {
   padding-top: 256px;
+  
+  background-image: url(<%= image_path("seattle_aerial@2x.png") %>);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  #logo {
+    @extend .padding-medium;
+
+    width: 100%;
+    max-width: 600px;
+  }
 
   .btn-group-lg {
 
@@ -239,6 +261,12 @@ em {
   }
 }
 
+@media (min-width: 1200px) {
+  #main {
+    background-size: 100% auto;
+  }
+}
+
 #date-location {
   border-color: white;
   border-width: 1px 0;
@@ -246,5 +274,9 @@ em {
 }
 
 #sponsors {
-  background-image: url(//placekitten.com/g/1280/480);
+  background-image: url(<%= image_path("seattle_skyline@2x.png") %>);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: #6e577c;
 }
