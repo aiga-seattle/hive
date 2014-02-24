@@ -55,7 +55,7 @@
     = image_tag "town_hall_seattle@2x.png", alt: "Town Hall Seattle", width: "100%"
 
   .col-sm-6.padding-none
-    = image_tag "town_hall_seattle@2x.png", alt: "Town Hall Seattle", width: "100%"
+    = image_tag "google_map@2x.png", alt: "Town Hall Seattle", width: "100%"
 
 
 #sponsors.bg-white.padding-extra-loose
@@ -63,8 +63,8 @@
     | Our Generous Sponsors
 
   #sponsor-logos.spacing-extra-loose
-    = link_to (image_tag "substantial.svg", height: 60, alt: "Substantial"), "http://substantial.com/", class: "padding-loose"
-    = link_to (image_tag "google.svg", height: 45, alt: "Google"), "http://www.google.com/about/company/", class: "padding-loose"
+    = link_to (image_tag "substantial.svg", height: 60, id: "substantial-logo", alt: "Substantial"), "http://substantial.com/"
+    = link_to (image_tag "google.svg", height: 45, id: "google-logo", alt: "Google"), "http://www.google.com/about/company/"
 
   .btn-group-lg
     = link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn", target: "_blank"
