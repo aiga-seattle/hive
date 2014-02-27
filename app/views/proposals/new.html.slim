@@ -17,16 +17,16 @@
     | If your talk is selected you'll receive a free pass to attend the conference, along with special speaker privileges 
     | and invitations. We may get in touch for other information for the website and program.
 
-#form.bg-light-gray.align-left.black.small.padding-loose
+#form.bg-light-gray.align-left.dark-black.small.padding-loose
   .row.width-wide
     .col-sm-8
-      = simple_form_for @proposal, html: { class: "small sans-serif" } do |f|
+      = simple_form_for @proposal, html: { class: "small sans-serif dark-gray" } do |f|
         h2.coral
           | Proposal Information
 
-        = f.input :title
-        = f.input :abstract
-        = f.input :benefits
+        = f.input :title, input_html: { class: "form-control input-lg" }
+        = f.input :abstract, input_html: { class: "form-control input-lg", rows: 8 }
+        = f.input :benefits, input_html: { class: "form-control input-lg" }
       
         = f.input :domain, as: :check_boxes, collection: ["User Experience (UX)", "User Interface (UI)"]
         = f.input :skill_level, as: :radio_buttons, collection: ["Beginner", "Intermediate", "Advanced"]
@@ -37,19 +37,20 @@
         h2.coral
           | Personal Information
 
-        = f.input :speaker_name
-        = f.input :speaker_email
-        = f.input :speaker_city
-        = f.input :speaker_bio
+        = f.input :speaker_name, input_html: { class: "form-control input-lg" }
+        = f.input :speaker_email, input_html: { class: "form-control input-lg" }
+        = f.input :speaker_city, input_html: { class: "form-control input-lg" }
+        = f.input :speaker_bio, input_html: { class: "form-control input-lg", rows: 5 }
 
         h2.coral
           | Additional Information
 
         = f.input :pays_own_travel, as: :radio_buttons, collection: ["Yes", "No", "Let me get back to you"]
-        = f.input :comments
+        = f.input :comments, input_html: { class: "form-control input-lg spacing-extra-loose", rows: 8 }
+
+        = f.error :base
 
         = f.button :submit, "Submit", class: "btn white bg-coral border-none input-lg"
-        = f.error :base
       end
 
     .col-sm-4
