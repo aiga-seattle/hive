@@ -1,7 +1,7 @@
 / subscription
 
-= simple_form_for subscription, remote: true, html: {class: "form-inline"} do |f|
-  .row.spacing-medium
+= simple_form_for subscription, remote: true, html: {class: "form-inline spacing-medium"} do |f|
+  .row
     .col-sm-1
 
     .col-sm-10
@@ -13,6 +13,6 @@
 
     .col-sm-1
 
-  = f.full_error :email_address
+  = f.full_error :email_address, class: "sans-serif small"
   = f.error :base
 end
