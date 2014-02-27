@@ -1,0 +1,7 @@
+forge "http://forge.puppetlabs.com"
+
+mod "puppetlabs/stdlib"
+mod "puppetlabs/sqlite"
+mod "puppetlabs/nodejs"
+mod "maestrodev/git"
+mod "rvm", :git => "https://github.com/blt04/puppet-rvm"
