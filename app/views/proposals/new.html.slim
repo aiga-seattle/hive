@@ -1,3 +1,17 @@
+#header.bg-black.width-full
+  .row.width-wide
+    .col-sm-3
+      = link_to root_path do
+        = image_tag "hive@2x.png", alt: "HIVE", id: "logo", height: 55, class: "margin-light"
+      end
+    .col-sm-6
+      .teal.sans-serif.uppercase.leading-tight.margin-light
+        strong June 20 & 21, 2014
+        br
+        | Seattle, Washington
+    .col-sm-3.btn-group-lg
+      = link_to "Register now", registration_url, class: "btn bg-coral border-none margin-light"
+
 #call-for-proposals.bg-white.black.padding-loose
   h1.teal
     | Interested in presenting at HIVE 2014?
@@ -46,11 +60,13 @@
           | Additional Information
 
         = f.input :pays_own_travel, as: :radio_buttons, collection: ["Yes", "No", "Let me get back to you"]
-        = f.input :comments, input_html: { class: "form-control input-lg spacing-extra-loose", rows: 8 }
+        = f.input :comments, input_html: { class: "form-control input-lg spacing-loose", rows: 8 }
 
         = f.error :base
 
-        = f.button :submit, "Submit", class: "btn white bg-coral border-none input-lg"
+        .btn-group-lg
+          = f.button :submit, "Submit", class: "btn white bg-coral border-none spacing-extra-loose"
+
       end
 
     .col-sm-4

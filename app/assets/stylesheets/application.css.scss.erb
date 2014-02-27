@@ -29,7 +29,7 @@ body {
   @extend .serif;
   @extend .bg-black;
   @extend .white;
-  
+
   text-align: center;
   font-size: 24px;
 }
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6,
 h2 {
   font-size: 36px;
   @extend .uppercase;
-  
+
   padding: 16px 0;
 
   max-width: 740px;
@@ -64,6 +64,10 @@ p {
 
   body {
     font-size: 16px;
+  }
+
+  small, .small {
+    font-size: 100%;
   }
 }
 
@@ -98,13 +102,13 @@ em {
 .social-logo {
   @extend .white;
   @extend .bg-coral;
-  
+
   height: 64px;
   width: 64px;
   line-height: 64px;
-  
+
   border-radius: 32px;
-  
+
   font-size: 40px;
 }
 
@@ -119,6 +123,11 @@ em {
 
 
 /* modular styles */
+.fixed {
+  position: fixed;
+  z-index: 100;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -204,7 +213,9 @@ em {
   margin-bottom: 64px;
 }
 
-
+.leading-tight {
+  line-height: 120%;
+}
 
 .padding-none {
   padding: 0;
@@ -230,6 +241,10 @@ em {
 
 .margin-none {
   margin: 0;
+}
+
+.margin-light {
+  margin: 8px;
 }
 
 .margin-loose {
@@ -350,9 +365,27 @@ em {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-color: #6e577c;
-  
+
   #substantial-logo {
     width: 100%;
     max-width: 392px;
+  }
+}
+
+#header {
+  @extend .fixed;
+}
+
+#call-for-proposals {
+  padding-top: 136px;
+}
+
+@media (max-width: 768px) {
+  #header {
+    position: static;
+  }
+
+  #call-for-proposals {
+    padding-top: 64px;
   }
 }
