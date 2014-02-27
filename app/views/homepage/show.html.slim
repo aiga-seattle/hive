@@ -62,7 +62,9 @@
   p.small
     | Early bird pricing ends April XX, 2014.
     br
-    | Please enquire about group rates. Registration is limited to 350 guests.
+    | Please 
+    = link_to "enquire", "mailto:hive@aigaseattle.org", class: "white underlined"
+    |  about group rates. Registration is limited to 350 guests.
 
   .btn-group-lg
     = link_to "Register Now", "#", class: "btn", target: "_blank"

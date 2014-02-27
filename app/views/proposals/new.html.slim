@@ -1,68 +1,70 @@
-.align-left.padding-light.bg-white.black
-  .width-screen
+#call-for-proposals.bg-white.black.padding-loose
+  h1.teal
+    | Interested in presenting at HIVE 2014?
 
-    h1.teal
-      | HIVE 2014 Call for Proposals
+  p
+    | We are inviting the User Experience and Design, Graphic Design, and 
+    | Software Development communities to submit talks.
 
-    p Interested to present at HIVE 2014?
+  hr.width-screen
 
-    p
-      | The HIVE conference is back in 2014 to dig into real-life projects, pragmatic practices and insightful observations 
-      | that we all can learn from to improve our own careers and products. We are inviting the User Experience and Design, 
-      | Graphic Design and Software Development communities to submit talks.
+  h2.coral.small
+    | Proposals will be accepted through April XX at midnight PDT.
+    br
+    | Talks will be 30 to 45 minutes long with questions and discussions included.
 
-    p Here is a list of topics we believe are of interest to our community (in alphabetical order):
+  p.small
+    | If your talk is selected you'll receive a free pass to attend the conference, along with special speaker privileges 
+    | and invitations. We may get in touch for other information for the website and program.
 
-    ul
-      li Designing Responsive Layouts
-      li Engaging User Experiences
-      li Front-End and Server Side Languages (JS, Ruby, PHP, HTML / CSS, etc)
-      li Iterative Design, Agile Process
-      li Presenting UX and designs to the Business Team
-      li Tools or Processes to consider
-      li Prototyping and Testing Product Ideas
-      li Solutions to bad UX and Wireframes
-      li Storyboard Product Ideas
-      li Working with Software Developers and/or Designers
-      li Career advice
-      li Whatever you think is of interest
+#form.bg-light-gray.align-left.black.small.padding-loose
+  .row.width-wide
+    .col-sm-8
+      = simple_form_for @proposal, html: { class: "small sans-serif" } do |f|
+        h2.coral
+          | Proposal Information
 
-    p
-      | Proposals will be accepted through March 5th at midnight PDT. Talks will be 30 to 45 minutes long with questions 
-      | and discussions included.
-
-    p
-      | If your talk is selected you'll receive a free pass to attend the conference, along with special speaker privileges 
-      | and invitations. We may get in touch for other information for the website and program.
-
-    = simple_form_for @proposal do |f|
-      h2.coral
-        | Proposal Information
-
-      = f.input :title
-      = f.input :abstract
-      = f.input :benefits
+        = f.input :title
+        = f.input :abstract
+        = f.input :benefits
       
-      = f.input :domain, as: :check_boxes, collection: ["User Experience (UX)", "User Interface (UI)"]
-      = f.input :skill_level, as: :radio_buttons, collection: ["Beginner", "Intermediate", "Advanced"]
-      = f.input :session_type, as: :radio_buttons, collection: ["Breakout Session", "Keynote", "Workshop", "Other"]
+        = f.input :domain, as: :check_boxes, collection: ["User Experience (UX)", "User Interface (UI)"]
+        = f.input :skill_level, as: :radio_buttons, collection: ["Beginner", "Intermediate", "Advanced"]
+        = f.input :session_type, as: :radio_buttons, collection: ["Breakout Session", "Keynote", "Workshop", "Other"]
       
-      = f.input :submitted_elsewhere, as: :radio_buttons
+        = f.input :submitted_elsewhere, as: :radio_buttons
       
-      h2.coral
-        | Personal Information
+        h2.coral
+          | Personal Information
 
-      = f.input :speaker_name
-      = f.input :speaker_email
-      = f.input :speaker_city
-      = f.input :speaker_bio
+        = f.input :speaker_name
+        = f.input :speaker_email
+        = f.input :speaker_city
+        = f.input :speaker_bio
 
-      h2.coral
-        | Additional Information
+        h2.coral
+          | Additional Information
 
-      = f.input :pays_own_travel, as: :radio_buttons, collection: ["Yes", "No", "Let me get back to you"]
-      = f.input :comments
+        = f.input :pays_own_travel, as: :radio_buttons, collection: ["Yes", "No", "Let me get back to you"]
+        = f.input :comments
 
-      = f.button :submit, "Submit", class: "btn white bg-coral border-none input-lg"
-      = f.error :base
-    end
+        = f.button :submit, "Submit", class: "btn white bg-coral border-none input-lg"
+        = f.error :base
+      end
+
+    .col-sm-4
+      h2.coral.small Some topics we believe are of interest to our community:
+
+      ul.small
+        li Designing responsive layouts
+        li Engaging user experiences
+        li Front-end and server side languages (JS, Ruby, PHP, HTML / CSS, etc)
+        li Iterative design, agile process
+        li Presenting UX and designs to the business team
+        li Tools or processes to consider
+        li Prototyping and testing product ideas
+        li Solutions to bad UX and wireframes
+        li Storyboarding product ideas
+        li Working with software developers and/or designers
+        li Career advice
+        li Whatever you think is of interest
