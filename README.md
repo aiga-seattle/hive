@@ -11,6 +11,23 @@ This app pulls configuration from environment variables, including:
 
 The app should start up without this data, but some functionality may be missing.
 
+### Development Box
+
+This app has a Vagrant box configured. Install Vagrant from http://www.vagrantup.com/. Once Vagrant is installed, run `vagrant up` to launch the machine. Next the following commands will get you to the directory.
+
+```
+$> vagrant ssh
+$> cd /vagrant
+```
+
+Here are the commands to launch the app from the root directory
+
+```
+$> rails server
+```
+
+The application can be visited by the host machine at http://localhost:13000.
+
 ## Deployment
 
 ### Configuring Heroku
