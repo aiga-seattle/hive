@@ -42,7 +42,7 @@
         = f.input :abstract, input_html: { class: "form-control input-lg", rows: 8 }
         = f.input :benefits, input_html: { class: "form-control input-lg" }
       
-        = f.input :domain, as: :check_boxes, collection: ["User Experience (UX)", "User Interface (UI)"]
+        = f.input :domain, as: :check_boxes, collection: ["Business Development", "Design", "Personal Experience", "Software Development", "User Experience (UX)", "User Interface (UI)", "Other"]
         = f.input :skill_level, as: :radio_buttons, collection: ["Beginner", "Intermediate", "Advanced"]
         = f.input :session_type, as: :radio_buttons, collection: ["Breakout Session", "Keynote", "Workshop", "Other"]
       
