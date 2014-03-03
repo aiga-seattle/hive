@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def registration_url
-    "http://www.eventbrite.com/"
+    "http://hive-seattle-2014.eventbrite.com"
   end
 
 end
