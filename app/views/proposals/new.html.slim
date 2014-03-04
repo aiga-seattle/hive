@@ -42,9 +42,9 @@
         = f.input :abstract, input_html: { class: "form-control input-lg", rows: 8 }
         = f.input :benefits, input_html: { class: "form-control input-lg" }
       
-        = f.input :domain, as: :check_boxes, collection: ["Business Development", "Design", "Personal Experience", "Software Development", "User Experience (UX)", "User Interface (UI)", "Other"]
+        = f.input :domain, as: :check_boxes, collection: ["Business Development", "Design", "Personal Experience", "Software Development", "User Experience (UX)", "User Interface (UI)", "Other (describe in comments)"]
         = f.input :skill_level, as: :radio_buttons, collection: ["Beginner", "Intermediate", "Advanced"]
-        = f.input :session_type, as: :radio_buttons, collection: ["Breakout Session", "Keynote", "Workshop", "Other"]
+        = f.input :session_type, as: :radio_buttons, collection: ["Breakout Session", "Keynote", "Workshop", "Other (describe in comments)"]
       
         = f.input :submitted_elsewhere, as: :radio_buttons
       
@@ -60,7 +60,7 @@
           | Additional Information
 
         = f.input :pays_own_travel, as: :radio_buttons, collection: ["Yes", "No", "Let me get back to you"]
-        = f.input :comments, input_html: { class: "form-control input-lg spacing-loose", rows: 8 }
+        = f.input :comments, input_html: { class: "form-control input-lg", rows: 8 }, wrapper_html: { class: "spacing-loose" }
 
         = f.error :base
 

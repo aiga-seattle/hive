@@ -1,0 +1,25 @@
+en:
+  simple_form:
+    labels:
+      proposal:
+        title: "Talk title"
+        benefits: "Benefits from session"
+        domain: "Domain of talk"
+        submitted_elsewhere: "Has this talk been submitted elsewhere?"
+
+        speaker_name: "Your name"
+        speaker_email: "Email address"
+        speaker_city: "City of residence"
+        speaker_bio: "Biography"
+
+        pays_own_travel: "Would your company consider paying for travel and/or lodging?"
+    hints:
+      proposal:
+        abstract: "Describe your session. A few paragraphs would be great!"
+        benefits: "Tell us what attendees will learn from your session"
+
+        speaker_city: "This will help us with travel logistics"
+        speaker_bio: "A short bio of who you are for us and the web"
+
+        pays_own_travel: "Help us keep conference tickets affordable"
+        comments: "Anything else you would like us to know?"
