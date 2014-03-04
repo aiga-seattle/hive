@@ -1,0 +1,5 @@
+en:
+  simple_form:
+    placeholders:
+      subscription:
+        email_address: "YOUR EMAIL ADDRESS"
