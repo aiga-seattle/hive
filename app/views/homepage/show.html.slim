@@ -100,9 +100,10 @@
     h2.black
       | Our Generous Sponsors
 
-    #sponsor-logos.spacing-extra-loose
-      = link_to (image_tag "substantial.svg", height: 60, id: "substantial-logo", alt: "Substantial"), "http://substantial.com/"
-      = link_to (image_tag "google.svg", height: 45, id: "google-logo", alt: "Google"), "http://www.google.com/about/company/"
+    #sponsor-logos.spacing-loose
+      .margin-medium-negative
+        = link_to (image_tag "substantial.svg", height: 92, id: "substantial-logo", alt: "Substantial", class: "padding-medium"), "http://substantial.com/"
+        = link_to (image_tag "google.svg", height: 77, id: "google-logo", alt: "Google", class: "padding-medium"), "http://www.google.com/about/company/"
 
     .btn-group-lg
       = link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn", target: "_blank"
@@ -124,13 +125,13 @@
 
 #mailing-list.padding-extra-loose
   .row.width-screen
-    .col-sm-1
+    .col-sm-2
 
-    .col-sm-10
-      section#subscription-form.padding-medium
+    .col-sm-8
+      section#subscription-form
         == render 'subscriptions/new', subscription: @subscription
 
-    .col-sm-1
+    .col-sm-2
 
   p
     em.small Get the latest updates from HIVE
