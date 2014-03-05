@@ -3,3 +3,17 @@ en:
     placeholders:
       subscription:
         email_address: "YOUR EMAIL ADDRESS"
+
+  helpers:
+    submit:
+      subscription:
+        create: "Sign up"
+
+  activemodel:
+    errors:
+      models:
+        subscription:
+          attributes:
+            email_address:
+              blank: "Please enter your email address"
+              invalid: "Please enter a valid email address"

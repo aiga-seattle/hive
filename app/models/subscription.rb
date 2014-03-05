@@ -5,7 +5,7 @@ class Subscription
 
   attr_accessor :email_address
 
-  validates :email_address, format: /.+@.+/
+  validates :email_address, presence: true, format: /.+@.+/
 
 
   def initialize(*args)
