@@ -12,26 +12,27 @@
     .col-sm-3.btn-group-lg
       = link_to "Register now", registration_url, class: "btn bg-coral border-none margin-light"
 
-#call-for-proposals.bg-white.black.padding-loose
-  h1.teal
-    | Interested in presenting at HIVE 2014?
+#call-for-proposals.bg-white.black
+  .width-screen.spacing-extra-loose
+    h1.teal
+      | Interested in presenting at HIVE 2014?
 
-  p.width-screen
-    | We are inviting the User Experience and Design, Graphic Design, and 
-    | Software Development communities to submit talks.
+    p
+      | We are inviting the User Experience and Design, Graphic Design, and 
+      | Software Development communities to submit talks.
 
-  hr.width-screen
+    hr
 
-  h2.coral.small
-    | Proposals will be accepted through April XX at midnight PDT.
-    br
-    | Talks will be 30 to 45 minutes long with questions and discussions included.
+    h2.coral.small
+      | Proposals will be accepted through April XX at midnight PDT.
+      br
+      | Talks will be 30 to 45 minutes long with questions and discussions included.
 
-  p.width-screen.small
-    | If your talk is selected you'll receive a free pass to attend the conference, along with special speaker privileges 
-    | and invitations. We may get in touch for other information for the website and program.
+    p.small
+      | If your talk is selected you'll receive a free pass to attend the conference, along with special speaker privileges 
+      | and invitations. We may get in touch for other information for the website and program.
 
-#form.bg-light-gray.align-left.dark-black.small.padding-loose
+#form.bg-light-gray.align-left.dark-black.small.padding-top-loose
   .row.width-wide
     .col-sm-8
       = simple_form_for @proposal, html: { class: "small sans-serif dark-gray" } do |f|
