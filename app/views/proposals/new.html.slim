@@ -16,7 +16,7 @@
   h1.teal
     | Interested in presenting at HIVE 2014?
 
-  p
+  p.width-screen
     | We are inviting the User Experience and Design, Graphic Design, and 
     | Software Development communities to submit talks.
 
@@ -27,7 +27,7 @@
     br
     | Talks will be 30 to 45 minutes long with questions and discussions included.
 
-  p.small
+  p.width-screen.small
     | If your talk is selected you'll receive a free pass to attend the conference, along with special speaker privileges 
     | and invitations. We may get in touch for other information for the website and program.
 
@@ -42,7 +42,7 @@
         = f.input :abstract, input_html: { class: "form-control input-lg", rows: 8 }
         = f.input :benefits, input_html: { class: "form-control input-lg" }
       
-        = f.input :domain, as: :check_boxes, collection: ["Business Development", "Design", "Personal Experience", "Software Development", "User Experience (UX)", "User Interface (UI)", "Other (describe in comments)"]
+        = f.input :domain, as: :check_boxes, include_hidden: false, collection: ["Business Development", "Design", "Personal Experience", "Software Development", "User Experience (UX)", "User Interface (UI)", "Other (describe in comments)"]
         = f.input :skill_level, as: :radio_buttons, collection: ["Beginner", "Intermediate", "Advanced"]
         = f.input :session_type, as: :radio_buttons, collection: ["Breakout Session", "Keynote", "Workshop", "Other (describe in comments)"]
       

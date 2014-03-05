@@ -23,3 +23,30 @@ en:
 
         pays_own_travel: "Help us keep conference tickets affordable"
         comments: "Anything else you would like us to know?"
+
+  activerecord:
+    errors:
+      models:
+        proposal:
+          attributes:
+            title:
+              blank: "Please enter the title of your talk"
+            abstract:
+              blank: "Please enter a description of your talk"
+            domain:
+              blank: "Please select one or more categories that best describe your talk"
+            skill_level:
+              blank: "Please select the skill level that best describes your talk"
+            session_type:
+              blank: "Please select the session type that best describes your talk"
+            submitted_elsewhere:
+              inclusion: "Please select \"Yes\" or \"No\""
+            speaker_name:
+              blank: "Please enter your name"
+            speaker_email:
+              blank: "Please enter your email address"
+              invalid: "Please enter a valid email address"
+            speaker_city:
+              blank: "Please enter your city"
+            speaker_bio:
+              blank: "Please tell us a bit about yourself"

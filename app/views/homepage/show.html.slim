@@ -15,71 +15,76 @@
 
 
 #synopsis.bg-white.padding-extra-loose
-  h2.teal
-    | HIVE explores and highlights the value of design in technology.
+  .width-screen
+    h2.teal
+      | HIVE explores and highlights the value of design in technology.
   
-  p.black
-    | Design thinking propels the most exciting products hitting the market today 
-    | and users demand front-end UI and back-end engineering partner to create a 
-    | seamless user experience. Join us at HIVE and explore the crossroads of 
-    | design and technology.
+    p.black
+      | Design thinking propels the most exciting products hitting the market today 
+      | and users demand front-end UI and back-end engineering partner to create a 
+      | seamless user experience. Join us at HIVE and explore the crossroads of 
+      | design and technology.
 
-  #share
-    = link_to "https://twitter.com/share?url=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank" do
-      i.fa.fa-twitter.social-logo
-    end
+    #share
+      = link_to "https://twitter.com/share?url=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank" do
+        i.fa.fa-twitter.social-logo
+      end
     
-    em.small.black.padding-loose
-      | « &nbsp;share&nbsp; »
+      em.small.black.padding-loose
+        | « &nbsp;share&nbsp; »
 
-    = link_to "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank" do
-      i.fa.fa-facebook.social-logo
-    end
+      = link_to "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank" do
+        i.fa.fa-facebook.social-logo
+      end
+
 
 #tickets.bg-coral.padding-extra-loose
-  h2.black
-    | Tickets and Registration
+  .width-screen
+    h2.black
+      | Tickets and Registration
 
-  .row.width-screen
-    .col-sm-4.col-xs-6.spacing-loose
-      p.spacing-none
-        | Students
-        br
-        span.extra-large $225
+    .row.width-screen
+      .col-sm-4.col-xs-6.spacing-loose
+        p.spacing-none
+          | Students
+          br
+          span.extra-large $225
 
-    .col-sm-4.col-xs-6.spacing-loose
-      p.spacing-none
-        | AIGA Members
-        br
-        span.extra-large $300
+      .col-sm-4.col-xs-6.spacing-loose
+        p.spacing-none
+          | AIGA Members
+          br
+          span.extra-large $300
 
-    .col-sm-4.col-xs-12.spacing-loose
-      p.spacing-none
-        | Non-members
-        br
-        span.extra-large $325
+      .col-sm-4.col-xs-12.spacing-loose
+        p.spacing-none
+          | Non-members
+          br
+          span.extra-large $325
 
-  p.small
-    | Early bird pricing ends April XX, 2014.
-    br
-    | Please 
-    = link_to "enquire", "mailto:hive@aigaseattle.org", class: "white underlined"
-    |  about group rates. Registration is limited to 350 guests.
+    p.small
+      | Early bird pricing ends April XX, 2014.
+      br
+      | Please 
+      = link_to "enquire", "mailto:hive@aigaseattle.org", class: "white underlined"
+      |  about group rates. Registration is limited to 350 guests.
 
-  .btn-group-lg
-    = link_to "Register Now", registration_url, class: "btn"
+    .btn-group-lg
+      = link_to "Register Now", registration_url, class: "btn"
+
 
 #location.bg-mustard.padding-extra-loose
-  h2.black
-    | Venue and Location
+  .width-screen
+    h2.black
+      | Venue and Location
 
-  p.white
-    | HIVE will be held at Town Hall, Seattle‘s community cultural center.
-    br
-    small 1119 Eighth Avenue / Seattle, WA 98101
+    p.white
+      | HIVE will be held at Town Hall, Seattle‘s community cultural center.
+      br
+      small 1119 Eighth Avenue / Seattle, WA 98101
 
-  .btn-group-lg
-    = link_to "Open in Google Maps", "http://maps.google.com/maps?cid=11186890733716328492", class: "btn", target: "_blank"
+    .btn-group-lg
+      = link_to "Open in Google Maps", "http://maps.google.com/maps?cid=11186890733716328492", class: "btn", target: "_blank"
 
 
 #location-images.row.margin-none
@@ -91,28 +96,30 @@
 
 
 #sponsors.bg-white.padding-extra-loose
-  h2.black
-    | Our Generous Sponsors
+  .width-screen
+    h2.black
+      | Our Generous Sponsors
 
-  #sponsor-logos.spacing-extra-loose
-    = link_to (image_tag "substantial.svg", height: 60, id: "substantial-logo", alt: "Substantial"), "http://substantial.com/"
-    = link_to (image_tag "google.svg", height: 45, id: "google-logo", alt: "Google"), "http://www.google.com/about/company/"
+    #sponsor-logos.spacing-extra-loose
+      = link_to (image_tag "substantial.svg", height: 60, id: "substantial-logo", alt: "Substantial"), "http://substantial.com/"
+      = link_to (image_tag "google.svg", height: 45, id: "google-logo", alt: "Google"), "http://www.google.com/about/company/"
 
-  .btn-group-lg
-    = link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn", target: "_blank"
+    .btn-group-lg
+      = link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn", target: "_blank"
 
 
 #speakers.bg-teal.padding-extra-loose
-  h2.black
-    | Call for Speakers!
+  .width-screen
+    h2.black
+      | Call for Speakers!
 
-  p.white
-    | Have a specific design or technology topic you feel needs discussion?
-    br
-    | Submit a proposal and let your voice be heard.
+    p.white
+      | Have a specific design or technology topic you feel needs discussion?
+      br
+      | Submit a proposal and let your voice be heard.
 
-  .btn-group-lg
-    = link_to "Speak at HIVE", new_proposal_path, class: "btn"
+    .btn-group-lg
+      = link_to "Speak at HIVE", new_proposal_path, class: "btn"
 
 
 #mailing-list.padding-extra-loose

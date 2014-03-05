@@ -1,5 +1,7 @@
 class Proposal < ActiveRecord::Base
 
+  before_validation :cleanup_domain
+
   validates :title, presence: true
   validates :abstract, presence: true
   validates :domain, presence: true
@@ -13,5 +15,12 @@ class Proposal < ActiveRecord::Base
   validates :speaker_bio, presence: true
 
   serialize :domain
+
+  private
+
+  # Rails includes a blank checkbox, so clean it up
+  def cleanup_domain
+    domain.reject!(&:blank?)
+  end
 
 end
