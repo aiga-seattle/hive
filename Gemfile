@@ -26,7 +26,7 @@ gem 'jquery-rails'
 # gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+# gem 'jbuilder', '~> 1.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -53,10 +53,10 @@ gem 'newrelic_rpm'
 gem 'mailchimp-api', require: 'mailchimp'
 gem 'rack-google-analytics'
 gem 'font-awesome-sass'
-gem 'capybara'
-gem 'poltergeist'
 
 group :test do
   gem 'mocha'
   gem 'shoulda-context'
+  gem 'capybara'
+  gem 'poltergeist'
 end
