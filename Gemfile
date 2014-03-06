@@ -53,6 +53,8 @@ gem 'newrelic_rpm'
 gem 'mailchimp-api', require: 'mailchimp'
 gem 'rack-google-analytics'
 gem 'font-awesome-sass'
+gem 'capybara'
+gem 'poltergeist'
 
 group :test do
   gem 'mocha'

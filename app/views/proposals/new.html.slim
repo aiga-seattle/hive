@@ -35,7 +35,7 @@
         = f.input :skill_level, as: :radio_buttons, collection: ["Beginner", "Intermediate", "Advanced"]
         = f.input :session_type, as: :radio_buttons, collection: ["Breakout Session", "Keynote", "Workshop", "Other (describe in comments)"]
       
-        = f.input :submitted_elsewhere, as: :radio_buttons
+        = f.input :submitted_elsewhere, as: :radio_buttons, required: true
       
         h2.coral
           | Personal Information
