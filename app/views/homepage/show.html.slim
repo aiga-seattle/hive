@@ -26,21 +26,19 @@
       | design and technology.
 
     #share
-      = link_to "https://twitter.com/share?url=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank" do
+      = link_to "https://twitter.com/share?url=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank"
         i.fa.fa-twitter.social-logo
-      end
     
       em.small.black.padding-loose
         | « &nbsp;share&nbsp; »
 
-      = link_to "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank" do
+      = link_to "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank"
         i.fa.fa-facebook.social-logo
-      end
 
 
 #tickets.bg-coral.padding-extra-loose.white
   .width-screen
-    h2.black
+    h2.straight-black
       | Tickets and Registration
 
     .row.width-screen
@@ -70,12 +68,12 @@
       |  about group rates. Registration is limited to 350 guests.
 
     .btn-group-lg
-      = link_to "Register Now", registration_url, class: "btn"
+      = link_to "Register Now", registration_url, class: "btn border-white"
 
 
 #location.bg-mustard.padding-extra-loose
   .width-screen
-    h2.black
+    h2.straight-black
       | Venue and Location
 
     p.white
@@ -84,7 +82,7 @@
       small 1119 Eighth Avenue / Seattle, WA 98101
 
     .btn-group-lg
-      = link_to "Open in Google Maps", "http://maps.google.com/maps?cid=11186890733716328492", class: "btn", target: "_blank"
+      = link_to "Open in Google Maps", "http://maps.google.com/maps?cid=11186890733716328492", class: "btn border-white", target: "_blank"
 
 
 #location-images.row.margin-none
@@ -97,21 +95,21 @@
 
 #sponsors.bg-white.padding-extra-loose
   .width-screen
-    h2.black
+    h2.straight-black
       | Our Generous Sponsors
 
     #sponsor-logos.spacing-loose
       .margin-medium-negative
-        = link_to (image_tag "substantial.svg", height: 92, id: "substantial-logo", alt: "Substantial", class: "padding-medium"), "http://substantial.com/"
-        = link_to (image_tag "google.svg", height: 77, id: "google-logo", alt: "Google", class: "padding-medium"), "http://www.google.com/about/company/"
+        = link_to (image_tag "substantial.svg", height: 92, id: "substantial-logo", alt: "Substantial", class: "padding-medium"), "http://substantial.com/", target: "_blank"
+        = link_to (image_tag "google.svg", height: 77, id: "google-logo", alt: "Google", class: "padding-medium"), "http://www.google.com/about/company/", target: "_blank"
 
     .btn-group-lg
-      = link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn", target: "_blank"
+      = link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn border-white", target: "_blank"
 
 
 #speakers.bg-teal.padding-extra-loose
   .width-screen
-    h2.black
+    h2.straight-black
       | Call for Speakers!
 
     p.white
@@ -120,27 +118,7 @@
       | Submit a proposal and let your voice be heard.
 
     .btn-group-lg
-      = link_to "Speak at HIVE", new_proposal_path, class: "btn"
+      = link_to "Speak at HIVE", new_proposal_path, class: "btn border-white"
 
-
-#mailing-list.padding-extra-loose.bg-black.white
-  .row.width-screen
-    .col-sm-2
-
-    .col-sm-8
-      section#subscription-form
-        == render 'subscriptions/new', subscription: @subscription
-
-    .col-sm-2
-
-  p
-    em.small Get the latest updates from HIVE
-
-  = link_to "https://twitter.com/HIVESeattle", target: "_blank", class: "margin-loose" do
-    i.fa.fa-twitter.social-logo
-  end
-
-  = link_to "http://www.youtube.com/user/HIVESeattle", target: "_blank", class: "margin-loose" do
-    i.fa.fa-youtube.social-logo
-  end
+= render "layouts/footer"
 

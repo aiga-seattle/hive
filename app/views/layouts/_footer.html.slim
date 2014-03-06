@@ -1,0 +1,22 @@
+ruby:
+  hide_subscriptions ||= false
+
+#mailing-list.padding-extra-loose.bg-black.white
+  - unless hide_subscriptions
+    .row.width-screen
+      .col-sm-2
+
+      .col-sm-8
+        section#subscription-form
+          = render "subscriptions/new", subscription: Subscription.new
+
+      .col-sm-2
+
+  p
+    em.small Get the latest updates from HIVE
+
+  = link_to "https://twitter.com/HIVESeattle", target: "_blank", class: "margin-loose"
+    i.fa.fa-twitter.social-logo
+
+  = link_to "http://www.youtube.com/user/HIVESeattle", target: "_blank", class: "margin-loose"
+    i.fa.fa-youtube.social-logo

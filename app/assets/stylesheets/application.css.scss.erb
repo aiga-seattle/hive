@@ -84,13 +84,17 @@ ul {
   
   @extend .uppercase;
   @extend .white;
-  @extend .border-white;
 }
 
 .btn-group-lg > .btn {
   width: 240px;
   white-space: normal;
   @extend .padding-medium;
+}
+
+.btn.border-white:hover {
+  background-color: #f4f4f4;
+  transition-duration: 0.3s;
 }
 
 .form-control {
@@ -219,6 +223,10 @@ em {
   margin-bottom: 64px;
 }
 
+.spacing-ridiculously-loose {
+  margin-bottom: 192px;
+}
+
 .leading-tight {
   line-height: 120%;
 }
@@ -286,6 +294,10 @@ em {
 
 .dark-black {
   color: #221e1f;
+}
+
+.straight-black {
+  color: #000000;
 }
 
 .light-gray {
@@ -366,7 +378,7 @@ em {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   #main {
     background-size: 100% auto;
   }
@@ -383,7 +395,7 @@ em {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-color: #6e577c;
+  background-color: #675680;
 
   #substantial-logo {
     width: 100%;

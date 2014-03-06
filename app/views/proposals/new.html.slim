@@ -1,18 +1,6 @@
-#header.bg-black.width-full
-  .row.width-wide
-    .col-sm-3
-      = link_to root_path do
-        = image_tag "hive@2x.png", alt: "HIVE", id: "logo", height: 55, class: "margin-light"
-      end
-    .col-sm-6
-      .teal.sans-serif.uppercase.leading-tight.margin-light
-        strong June 20 & 21, 2014
-        br
-        | Seattle, Washington
-    .col-sm-3.btn-group-lg
-      = link_to "Register now", registration_url, class: "btn bg-coral border-none margin-light"
+= render "layouts/header"
 
-#call-for-proposals.bg-white.black
+#call-for-proposals
   .width-screen.spacing-extra-loose
     h1.teal
       | Interested in presenting at HIVE 2014?
@@ -66,9 +54,8 @@
         = f.error :base
 
         .btn-group-lg
-          = f.button :submit, "Submit", class: "btn white bg-coral border-none spacing-extra-loose"
+          = f.button :submit, "Submit", class: "btn white bg-coral spacing-extra-loose"
 
-      end
 
     .col-sm-4
       h2.coral.small Some topics we believe are of interest to our community:
@@ -87,3 +74,7 @@
         li Storyboarding product ideas
         li Career advice
         li Whatever you think is of interest
+
+
+= render "layouts/footer", hide_subscriptions: true
+

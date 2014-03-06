@@ -9,10 +9,9 @@
         .col-sm-9.col-xs-8.flush-right
           = f.input_field :email_address, class: "form-control input-lg sans-serif bg-gray light-gray"
         .col-sm-3.col-xs-4.flush-left
-          = f.button :submit, class: "btn white bg-coral border-none width-full input-lg"
+          = f.button :submit, class: "btn white bg-coral width-full input-lg"
 
     .col-sm-1
 
   = f.error :email_address, class: "sans-serif small"
   = f.error :base
-end
