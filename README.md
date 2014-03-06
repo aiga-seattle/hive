@@ -11,6 +11,11 @@ This app pulls configuration from environment variables, including:
 
 The app should start up without this data, but some functionality may be missing.
 
+### Testing
+
+This app uses Poltergeist for integration testing, which requires PhantomJS to run. Find instructions for installing
+PhantomJS on the [Poltergeist GitHub page](https://github.com/jonleighton/poltergeist#installing-phantomjs).
+
 ## Deployment
 
 ### Configuring Heroku
