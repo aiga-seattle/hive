@@ -40,7 +40,7 @@ en:
             session_type:
               blank: "Please select the session type that best describes your talk"
             submitted_elsewhere:
-              inclusion: "Please select \"Yes\" or \"No\""
+              inclusion: "Please select “Yes” or “No”"
             speaker_name:
               blank: "Please enter your name"
             speaker_email:

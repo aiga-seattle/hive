@@ -1,42 +1,44 @@
 = render "layouts/header"
 
-#call-for-proposals
-  .width-screen.spacing-extra-loose
-    h1.teal
-      | Interested in presenting at HIVE 2014?
+= simple_form_for @proposal, html: { class: "" } do |f|
+  #call-for-proposals
+    .width-screen.spacing-extra-loose
+      = f.error_notification message: "Please review the errors in your proposal submission below &nbsp; &nbsp; ⬇︎", class: "alert-danger sans-serif bold spacing-extra-loose"
+    
+      h1.teal
+        | Interested in presenting at HIVE 2014?
 
-    p
-      | We are inviting the User Experience and Design, Graphic Design, and 
-      | Software Development communities to submit talks.
+      p
+        | We are inviting the User Experience and Design, Graphic Design, and 
+        | Software Development communities to submit talks.
 
-    hr
+      hr
 
-    h2.coral.small
-      | Proposals will be accepted through April XX at midnight PDT.
-      br
-      | Talks will be 30 to 45 minutes long with questions and discussions included.
+      h2.coral.small
+        | Proposals will be accepted through April XX at midnight PDT.
+        br
+        | Talks will be 30 to 45 minutes long with questions and discussions included.
 
-    p.small
-      | If your talk is selected you'll receive a free pass to attend the conference, along with special speaker privileges 
-      | and invitations. We may get in touch for other information for the website and program.
+      p.small
+        | If your talk is selected you’ll receive a free pass to attend the conference, along with special speaker privileges 
+        | and invitations. We may get in touch for other information for the website and program.
 
-#form.bg-light-gray.align-left.dark-black.small.padding-vertical-loose
-  .row.width-wide
-    .col-sm-8
-      = simple_form_for @proposal, html: { class: "small sans-serif dark-gray" } do |f|
+  #form.bg-light-gray.align-left.dark-black.small.padding-vertical-loose
+    .row.width-wide
+      .col-sm-8.small.sans-serif.dark-gray
         h2.coral
           | Proposal Information
 
         = f.input :title, input_html: { class: "form-control input-lg" }
         = f.input :abstract, input_html: { class: "form-control input-lg", rows: 8 }
         = f.input :benefits, input_html: { class: "form-control input-lg" }
-      
+    
         = f.input :domain, as: :check_boxes, include_hidden: false, collection: ["Business Development", "Design", "Personal Experience", "Software Development", "User Experience (UX)", "User Interface (UI)", "Other (describe in comments)"]
         = f.input :skill_level, as: :radio_buttons, collection: ["Beginner", "Intermediate", "Advanced"]
         = f.input :session_type, as: :radio_buttons, collection: ["Breakout Session", "Keynote", "Workshop", "Other (describe in comments)"]
-      
+    
         = f.input :submitted_elsewhere, as: :radio_buttons, required: true
-      
+    
         h2.coral
           | Personal Information
 
@@ -57,23 +59,23 @@
           = f.button :submit, "Submit", class: "btn white bg-coral spacing-extra-loose"
 
 
-    .col-sm-4
-      h2.coral.small Some topics we believe are of interest to our community:
+      .col-sm-4
+        h2.coral.small Some topics we believe are of interest to our community:
 
-      ul.small
-        li Working with software developers and/or designers, e.g. "The Handoff"
-        li Front-end and server-side languages (JS, Ruby, PHP, HTML / CSS, etc)
-        li Iterative design, agile process
-        li Working with clients
-        li Designing responsive layouts
-        li Engaging user experiences
-        li Presenting UX and designs to the business team
-        li Tools or processes to consider
-        li Prototyping and testing product ideas
-        li Solutions to bad UX and wireframes
-        li Storyboarding product ideas
-        li Career advice
-        li Whatever you think is of interest
+        ul.small
+          li Working with software developers and/or designers, e.g. “The Handoff”
+          li Front-end and server-side languages (JS, Ruby, PHP, HTML / CSS, etc)
+          li Iterative design, agile process
+          li Working with clients
+          li Designing responsive layouts
+          li Engaging user experiences
+          li Presenting UX and designs to the business team
+          li Tools or processes to consider
+          li Prototyping and testing product ideas
+          li Solutions to bad UX and wireframes
+          li Storyboarding product ideas
+          li Career advice
+          li Whatever you think is of interest
 
 
 = render "layouts/footer", hide_subscriptions: true
