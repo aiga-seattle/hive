@@ -8,7 +8,7 @@ class ProposalsController < ApplicationController
     @proposal = Proposal.new(proposal_params)
 
     unless @proposal.save
-      # render :new
+      render :new
     end
   end
 

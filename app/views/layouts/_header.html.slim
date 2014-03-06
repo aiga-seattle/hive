@@ -1,14 +1,33 @@
+ruby:
+  hide_registration ||= false
+
 #header.bg-black.width-full
   .row.width-wide
-    .col-sm-3
-      = link_to root_path do
-        = image_tag "hive@2x.png", alt: "HIVE", id: "logo", height: 55, class: "margin-light"
+    - if hide_registration
+      .col-sm-2
+      
+      .col-sm-3
+        = link_to root_path do
+          = image_tag "hive@2x.png", alt: "HIVE", id: "logo", height: 55, class: "margin-light"
 
-    .col-sm-6
-      .teal.sans-serif.uppercase.leading-tight.margin-light
-        strong June 20 & 21, 2014
-        br
-        | Seattle, Washington
+      .col-sm-5
+        .teal.sans-serif.uppercase.leading-tight.margin-light
+          strong June 20 & 21, 2014
+          br
+          | Seattle, Washington
 
-    .col-sm-3.btn-group-lg
-      = link_to "Register now", registration_url, class: "btn bg-coral margin-light"
+      .col-sm-2
+
+    - else
+      .col-sm-3
+        = link_to root_path do
+          = image_tag "hive@2x.png", alt: "HIVE", id: "logo", height: 55, class: "margin-light"
+
+      .col-sm-6
+        .teal.sans-serif.uppercase.leading-tight.margin-light
+          strong June 20 & 21, 2014
+          br
+          | Seattle, Washington
+
+      .col-sm-3.btn-group-lg
+        = link_to "Register now", registration_url, class: "btn bg-coral margin-light"
