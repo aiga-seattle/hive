@@ -8,6 +8,9 @@ Hive::Application.routes.draw do
   resources :subscriptions, only: :create
   resources :proposals, only: [:new, :create]
 
+  # Redirect to Registration
+  get '/register', to: redirect("http://hive-seattle-2014.eventbrite.com/")
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
