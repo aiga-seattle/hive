@@ -95,6 +95,88 @@
       br
       small 1113 Sixth Avenue / Seattle, WA 98101
 
+#schedule.bg-teal.padding-extra-loose
+  .width-screen
+    h2.straight-black
+      | Schedule
+
+    hr.white
+    p.white.margin-none
+      | Opening Party / June 19th, 8–11pm
+      br
+      small Location / 1111 Example Avenue
+    hr.white.spacing-extra-loose
+
+    .row
+      .col-sm-6
+        p.white.spacing-medium Friday, June 20
+        table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose
+          tr
+            td.align-right.padding-light.width-120 8:00am
+            td.white.padding-light Registration and coffee
+          tr
+            td.align-right.padding-light 9:00am
+            td.white.padding-light Welcome
+          tr
+            td.align-right.padding-light 10:00am
+            td.white.padding-light Speaker
+          tr
+            td.align-right.padding-light 10:45am
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light 11:00am
+            td.white.padding-light Speaker
+          tr
+            td.align-right.padding-light 12:00pm
+            td.white.padding-light Lunch
+          tr
+            td.align-right.padding-light 1:00pm
+            td.white.padding-light Workshop
+          tr
+            td.align-right.padding-light 2:00pm
+            td.white.padding-light Speaker
+          tr
+            td.align-right.padding-light 2:45pm
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light 3:00pm
+            td.white.padding-light Speaker
+
+      .col-sm-6
+        p.white.spacing-medium Saturday, June 21
+        table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose
+          tr
+            td.align-right.padding-light.width-120 8:00am
+            td.white.padding-light Registration and coffee
+          tr
+            td.align-right.padding-light 9:00am
+            td.white.padding-light Welcome
+          tr
+            td.align-right.padding-light 10:00am
+            td.white.padding-light Speaker
+          tr
+            td.align-right.padding-light 10:45am
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light 11:00am
+            td.white.padding-light Speaker
+          tr
+            td.align-right.padding-light 12:00pm
+            td.white.padding-light Lunch
+          tr
+            td.align-right.padding-light 1:00pm
+            td.white.padding-light Workshop
+          tr
+            td.align-right.padding-light 2:00pm
+            td.white.padding-light Speaker
+          tr
+            td.align-right.padding-light 2:45pm
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light 3:00pm
+            td.white.padding-light Speaker
+
+
 #sponsors.bg-white.padding-extra-loose
   .width-screen
     h2.straight-black
@@ -109,20 +191,6 @@
 
     .btn-group-lg
       = link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn border-white", target: "_blank"
-
-
-#speakers.bg-teal.padding-extra-loose
-  .width-screen
-    h2.straight-black
-      | Call for Speakers!
-
-    p.white
-      | Have a specific design or technology topic you feel needs discussion?
-      br
-      | Submit a proposal and let your voice be heard.
-
-    .btn-group-lg
-      = link_to "Speak at HIVE", new_proposal_path, class: "btn border-white"
 
 = render "layouts/footer"
 
