@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20140414225442) do
   create_table "proposals", force: true do |t|
     t.string   "title",                           null: false
     t.text     "abstract",                        null: false
-    t.text     "benefits",
+    t.text     "benefits"
     t.string   "domain",                          null: false
     t.string   "skill_level",                     null: false
     t.string   "session_type",                    null: false

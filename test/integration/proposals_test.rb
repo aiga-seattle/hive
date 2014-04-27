@@ -22,8 +22,7 @@ class ProposalsTest < ActionDispatch::IntegrationTest
     fill_in "Biography", with: "I am an awesome speaker!"
 
     click_on "Submit"
-
-    assert has_content?("We've got your proposal!"), "Proposal submission should be successful"
+    assert has_content?("THANK YOU"), "Proposal submission should be successful"
   end
 
 end
