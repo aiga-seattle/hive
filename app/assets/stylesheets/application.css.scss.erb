@@ -109,6 +109,16 @@ em {
   @extend .sans-serif;
 }
 
+.extra-small {
+  font-size: 66%;
+}
+
+@media (max-width: 768px) {
+  .extra-small {
+    font-size: 85%;
+  }
+}
+
 .social-logo {
   @extend .white;
   @extend .bg-coral;
@@ -200,6 +210,11 @@ em {
   max-width: 960px;
 }
 
+.width-extra-wide {
+  @extend .width-screen;
+  max-width: 1200px;
+}
+
 .side-spaced {
   margin: 0 8px;
 }
@@ -217,6 +232,10 @@ em {
 
 .spacing-none {
   margin-bottom: 0;
+}
+
+.spacing-light {
+  margin-bottom: 8px;
 }
 
 .spacing-medium {
@@ -354,6 +373,10 @@ em {
 
 .border-none {
   border: none;
+}
+
+.border-wide {
+  border-width: 8px;
 }
 
 .translucent {
