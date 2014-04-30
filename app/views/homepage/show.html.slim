@@ -2,14 +2,14 @@
   = image_tag "hive@2x.png", alt: "HIVE", id: "logo", class: "spacing-extra-loose"
 
   #date-location.uppercase.sans-serif.padding-medium.spacing-extra-loose.white
-    strong June 20 & 21, 2014 
+    strong June 20 & 21, 2014
     | / Seattle, Washington
 
   .btn-group-lg.spacing-loose
     = link_to "Register now", registration_url, class: "btn bg-coral"
 
   #aiga-lockup.black.bg-white.translucent.padding-medium
-    em.small.side-spaced presented by 
+    em.small.side-spaced presented by
     = link_to (image_tag "aiga_seattle.svg", width: 151, height: 51, alt: "AIGA Seattle"), "http://www.aigaseattle.org/"
 
 
@@ -20,84 +20,94 @@
 
   .row.width-extra-wide.sans-serif.align-left
     .col-md-3.col-sm-4.col-xs-6
-      = image_tag "http://placekitten.com/670/670", width: "100%"
+      = headshot_image_tag("nickFinck.jpg")
 
       hr.border-wide
 
       p.uppercase.leading-tight.spacing-none
-        strong Zach Morris 
+        strong Nick Finck
+        br
         em.coral
-          | /&nbsp;Teague
-      
+          | /&nbsp;Amazon AWS
+
       p.uppercase.spacing-medium
-        em.teal.small Pioneer of Mobile
-      
+        em.teal.small
+          strong Keynote:&nbsp;
+          The Nuances of UX
+
       p.extra-small
-        | Devin Liddell leads the brand strategy offer for design consultancy TEAGUE, 
-        | working collaboratively with clients such as Anheuser-Busch InBev, The Boeing Company, 
-        | Intel, JW Marriott, Microsoft, and SC Johnson to create research-driven brand strategies 
-        | and consumer experiences.
+        | Nick Finck is a user experience professional who has worked in the web
+        | industry for over a decade. He specializes in information architecture,
+        | interaction design, usability and user research for web and mobile.
+
+      p.extra-small
+        | Nick has created web and mobile experiences for Fortune 500 companies
+        | including Adobe, Intel, REI, Boeing, Google, and Oprah.com. He lives
+        | and plays in Seattle, Washington, where he’s the Senior Manager of User
+        | Experience at Amazon AWS, a highly reliable, scalable, low-cost
+        | infrastructure platform in the cloud.
 
     .col-md-3.col-sm-4.col-xs-6
-      = image_tag "http://placekitten.com/670/670", width: "100%"
+      = headshot_image_tag("thomasWendt.jpg")
 
       hr.border-wide
 
       p.uppercase.leading-tight.spacing-none
-        strong Zach Morris 
+        strong Thomas Wendt
+        br
         em.coral
-          | /&nbsp;Teague
-      
+          | /&nbsp;Surrounding Signifiers
+
       p.uppercase.spacing-medium
-        em.teal.small Pioneer of Mobile
-      
+        em.teal.small Design for Dasein
+
       p.extra-small
-        | Devin Liddell leads the brand strategy offer for design consultancy TEAGUE, 
-        | working collaboratively with clients such as Anheuser-Busch InBev, The Boeing Company, 
-        | Intel, JW Marriott, Microsoft, and SC Johnson to create research-driven brand strategies 
-        | and consumer experiences. With more than a decade of experience in brand strategy and 
-        | design, Devin has worked across a broad spectrum of industries: aerospace, higher education, 
-        | software/technology, food and beverage, and retail.
+        | My talks are usually centered around an underserved issue within
+        | the broad topics of design, technology, and strategy. I focus on the
+        | connections between design and other fields including philosophy, psychology,
+        | literary theory, and cognitive science to create a holistic and systems-driven
+        | view of the topic. While it might sound a little esoteric, I always include
+        | ways to think about these topics through the lens of day to day design work.
 
     .clearfix.visible-xs
 
     .col-md-3.col-sm-4.col-xs-6
-      = image_tag "http://placekitten.com/670/670", width: "100%"
+      = headshot_image_tag("jenniferMullins.jpg")
 
       hr.border-wide
 
       p.uppercase.leading-tight.spacing-none
-        strong Zach Morris 
+        strong Jenny Mullins
+        br
         em.coral
-          | /&nbsp;Teague
-      
+          | /&nbsp;Yammer
+
       p.uppercase.spacing-medium
-        em.teal.small Pioneer of Mobile
-      
+        em.teal.small Why pixel perfect isn't so perfect
+
       p.extra-small
-        | Devin Liddell leads the brand strategy offer for design consultancy TEAGUE.
+        | Jenny Mullins is a UI Designer at Yammer. She is passionate about good design and intuitive user experience.
 
     .clearfix.visible-sm
 
     .col-md-3.col-sm-4.col-xs-6
-      = image_tag "http://placekitten.com/670/670", width: "100%"
+      = headshot_image_tag("jonBell.jpg")
 
       hr.border-wide
 
       p.uppercase.leading-tight.spacing-none
-        strong Zach Morris 
+        strong Jon Bell
+        br
         em.coral
-          | /&nbsp;Teague
-      
+          | /&nbsp;Twitter
+
       p.uppercase.spacing-medium
-        em.teal.small Pioneer of Mobile
-      
+        em.teal.small Design While Shipping
+
       p.extra-small
-        | Devin Liddell leads the brand strategy offer for design consultancy TEAGUE, 
-        | working collaboratively with clients such as Anheuser-Busch InBev, The Boeing Company, 
-        | Intel, JW Marriott, Microsoft, and SC Johnson to create research-driven brand strategies 
-        | and consumer experiences. With more than a decade of experience in brand strategy and 
-        | design, Devin has worked across a broad spectrum of industries.
+        | Jon Bell has worked at frog design, Windows Phone, and is now the
+        | first designer in Twitter's Seattle office. He also runs @uxlaunchpad,
+        | a hands-on, one-day, fun design course. He loves teaching and building things.
 
 #tickets.bg-coral.padding-extra-loose.white
   .width-screen
@@ -118,10 +128,10 @@
           span.extra-large $299
 
     p.small
-      | The above pricing is an early bird special limited to just 100 tickets, 
+      | The above pricing is an early bird special limited to just 100 tickets,
       | so act fast.
       br
-      | Please 
+      | Please
       = link_to "ask us", "mailto:hive@seattle.aiga.org", class: "white underlined"
       |  about student or group rates. Registration is limited to 350 guests.
 
@@ -154,7 +164,7 @@
 #hotel.bg-mustard.padding-extra-loose
   .width-screen
     p.white
-      | Attendees receive a special discount at the nearby Crowne Plaza Hotel. 
+      | Attendees receive a special discount at the nearby Crowne Plaza Hotel.
       = link_to "Book your room today.", "#", class: "white underlined"
       br
       small 1113 Sixth Avenue / Seattle, WA 98101
@@ -246,17 +256,17 @@
   .width-screen
     h2.teal
       | HIVE explores and highlights the value of design in technology.
-  
+
     p.black
-      | Design thinking propels the most exciting products hitting the market today 
-      | and users demand front-end UI and back-end engineering partner to create a 
-      | seamless user experience. Join us at HIVE and explore the crossroads of 
+      | Design thinking propels the most exciting products hitting the market today
+      | and users demand front-end UI and back-end engineering partner to create a
+      | seamless user experience. Join us at HIVE and explore the crossroads of
       | design and technology.
 
     #share
       = link_to "https://twitter.com/share?url=http%3A%2F%2Fhive.aigaseattle.org%2F", target: "_blank"
         i.fa.fa-twitter.social-logo
-    
+
       em.small.black.padding-loose
         | « &nbsp;share&nbsp; »
 
