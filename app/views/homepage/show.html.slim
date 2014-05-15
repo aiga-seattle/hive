@@ -801,11 +801,17 @@
       | Our Generous Sponsors
 
     #sponsor-logos.row.spacing-loose
-      .col-sm-8
+      .col-sm-12
         = link_to (image_tag "substantial.svg", height: 60, id: "substantial-logo", alt: "Substantial", class: "margin-vertical-medium"), "http://substantial.com/", target: "_blank"
 
+
+    #sponsor-logos.row.spacing-loose
       .col-sm-4
         = link_to (image_tag "google.svg", height: 55, id: "google-logo", alt: "Google", class: "margin-vertical-medium"), "http://www.google.com/about/company/", target: "_blank"
+
+      .col-sm-4
+        = link_to (image_tag "FreshConsulting.svg", height: 80, id: "fresh-consulting-logo", alt: "Fresh Consulting", class: "margin-vertical-medium"), "http://www.freshconsulting.com/", target: "_blank"
+
 
     .btn-group-lg
       = link_to "Download sponsor packet", "https://dl.dropboxusercontent.com/u/7402127/hive-2013.pdf", class: "btn border-white", target: "_blank"
