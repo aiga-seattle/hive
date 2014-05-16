@@ -15,6 +15,7 @@
 
 #speakers.bg-white.padding-extra-loose
   .width-screen
+    a name="speakers"
     h2.straight-black
       | Speakers
 
@@ -650,6 +651,7 @@
       | Additional speakers to be announced soon.
 
 #tickets.bg-coral.padding-extra-loose.white
+  a name="registration"
   .width-screen
     h2.straight-black
       | Tickets and Registration
@@ -686,6 +688,7 @@
 
 #location.bg-mustard.padding-extra-loose
   .width-screen
+    a name="venue"
     h2.straight-black
       | Venue and Location
 
@@ -708,6 +711,7 @@
 
 #hotel.bg-mustard.padding-extra-loose
   .width-screen
+    a name="hotel"
     h2.straight-black
       | Hotel and Lodging
 
@@ -718,87 +722,269 @@
       small 1113 Sixth Avenue / Seattle, WA 98101
 
 
-/ #schedule.bg-teal.padding-extra-loose
-/   .width-screen
-/     h2.straight-black
-/       | Schedule
-/ 
-/     hr.white
-/     p.white.margin-none
-/       | Opening Party / June 19th, 8–11pm
-/       br
-/       small Location / 1111 Example Avenue
-/     hr.white.spacing-extra-loose
-/ 
-/     .row
-/       .col-sm-6
-/         p.white.spacing-medium Friday, June 20
-/         table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose
-/           tr
-/             td.align-right.padding-light.width-120 8:00am
-/             td.white.padding-light Registration and coffee
-/           tr
-/             td.align-right.padding-light 9:00am
-/             td.white.padding-light Welcome
-/           tr
-/             td.align-right.padding-light 10:00am
-/             td.white.padding-light Speaker
-/           tr
-/             td.align-right.padding-light 10:45am
-/             td.white.padding-light 15-minute break
-/           tr
-/             td.align-right.padding-light 11:00am
-/             td.white.padding-light Speaker
-/           tr
-/             td.align-right.padding-light 12:00pm
-/             td.white.padding-light Lunch
-/           tr
-/             td.align-right.padding-light 1:00pm
-/             td.white.padding-light Workshop
-/           tr
-/             td.align-right.padding-light 2:00pm
-/             td.white.padding-light Speaker
-/           tr
-/             td.align-right.padding-light 2:45pm
-/             td.white.padding-light 15-minute break
-/           tr
-/             td.align-right.padding-light 3:00pm
-/             td.white.padding-light Speaker
-/ 
-/       .col-sm-6
-/         p.white.spacing-medium Saturday, June 21
-/         table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose
-/           tr
-/             td.align-right.padding-light.width-120 8:00am
-/             td.white.padding-light Registration and coffee
-/           tr
-/             td.align-right.padding-light 9:00am
-/             td.white.padding-light Welcome
-/           tr
-/             td.align-right.padding-light 10:00am
-/             td.white.padding-light Speaker
-/           tr
-/             td.align-right.padding-light 10:45am
-/             td.white.padding-light 15-minute break
-/           tr
-/             td.align-right.padding-light 11:00am
-/             td.white.padding-light Speaker
-/           tr
-/             td.align-right.padding-light 12:00pm
-/             td.white.padding-light Lunch
-/           tr
-/             td.align-right.padding-light 1:00pm
-/             td.white.padding-light Workshop
-/           tr
-/             td.align-right.padding-light 2:00pm
-/             td.white.padding-light Speaker
-/           tr
-/             td.align-right.padding-light 2:45pm
-/             td.white.padding-light 15-minute break
-/           tr
-/             td.align-right.padding-light 3:00pm
-/             td.white.padding-light Speaker
+#schedule.bg-teal.padding-extra-loose
+  .width-screen
+    a name="schedule"
+    h2.straight-black
+      | Schedule
 
+    hr.white
+    p.white.margin-none
+      | Opening Party Hosted by Substantial / June 19th, TBA
+      br
+      small Location / Sole Repair Shop, 1001 E Pike St
+    hr.white.spacing-extra-loose
+
+    .row
+      .col-sm-12.speaker-column
+        p.white.spacing-medium Friday, June 20
+        table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose.speaker-table
+          tr
+            td.align-right.padding-light.width-120.valign-top 8:00am
+            td.white.padding-light Registration and coffee
+          tr
+            td.align-right.padding-light.valign-top 9:00am
+            td.white.padding-light Welcome
+          tr
+            td.align-right.padding-light.valign-top 9:15am
+            td.white.padding-light Opening Keynote - TBA
+          tr
+            td.align-right.padding-light.valign-top 10:15am
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Fostering Digital Craftsmanship
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Ryan Harasyn
+              p.spacing-none
+                | TBA
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Jacob Cook
+          tr
+            td.align-right.padding-light.valign-top 10:45am
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Breaking the Law: Lessons from the Underworld on Design and Innovation
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Devin Liddell
+              p.spacing-none
+                | Personalizing Personal Computing: A Matter of Choice 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Albert Shum
+          tr
+            td.align-right.padding-light.valign-top 11:15pm
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light.valign-top 11:30pm
+            td.white.padding-light 
+              p.spacing-none
+                strong Keynote:&nbsp;
+                | Nuances of UX 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Nick Finck
+          tr
+            td.align-right.padding-light.valign-top 12:30pm
+            td.white.padding-light Lunch Provided
+          tr
+            td.align-right.padding-light.valign-top 1:30pm
+            td.white.padding-light 
+              p.spacing-none
+                | Design is Design 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Matt Conway
+          tr
+            td.align-right.padding-light.valign-top 2:15pm
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light.valign-top 2:30pm
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Design While Shipping 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Jon Bell
+              p.spacing-none
+                | Rapid Product Development Through User Research and 
+                | Cross-functional Teams Workshop - Part 1 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;David Lifson 
+          tr
+            td.align-right.padding-light.valign-top 3:00pm
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Iterating to Success: Collaborative Product Development 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Melissa Scott &amp; Barton McGuire
+              p.spacing-none
+                | Rapid Product Development Through User Research and 
+                | Cross-functional Teams Workshop - Part 2 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;David Lifson 
+          tr
+            td.align-right.padding-light.valign-top 3:30pm
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light.valign-top 3:45pm
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Story Driven Design 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Bill Flora
+              p.spacing-none
+                | Stop Showing Static Comps to Clients! Learn to Design 
+                | in the Browser Workshop - Part 1 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Erik Fadlman
+          tr
+            td.align-right.padding-light.valign-top 4:15pm
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Steering Clients in the Right Direction (or Turning North When Clients Head South) 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Sarah Amos, Brigitt Rains, and Michi Broman
+              p.spacing-none
+                | Stop Showing Static Comps to Clients! Learn to Design in 
+                | the Browser Workshop - Part 2 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Erik Fadlman
+          tr
+            td.align-right.padding-light.valign-top 4:45pm
+            td.white.padding-light Presentations Conclude
+
+          tr
+            td.align-right.padding-light.valign-top 6:00pm
+            td.white.padding-light Friday Night Social with Google
+
+    hr.white
+    p.white.margin-none
+      | Friday Night Social Hosted by Google / June 20th, 6:00pm
+      br
+      small Location / Garage, 1130 Broadway, Seattle, WA 98122
+    hr.white.spacing-extra-loose
+
+    .row
+      .col-sm-12.speaker-column
+        p.white.spacing-medium Saturday, June 21
+        table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose.speaker-table
+          tr
+            td.align-right.padding-light.width-120 8:00am
+            td.white.padding-light Registration and coffee
+          tr
+            td.align-right.padding-light.valign-top 9:00am
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Design for Dasein 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Thomas Wendt
+              p.spacing-none
+                | I saw what you did there…but I don’t understand. (why talking to customers matters) 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Nathan Brutzman
+          tr
+            td.align-right.padding-light.valign-top 9:30am
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Toward a New Understanding of Designing for Experience 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Phillip Hunter
+              p.spacing-none
+                | Inspecting the Music  Seeker: An Ethnographic Look at the Digital Music Lifestyle 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Carol A. Taylor
+          tr
+            td.align-right.padding-light.valign-top 10:00am
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light.valign-top 10:15am
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Keeping the U in UX: Research strategies for cross-disciplinary UX teams
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Deidre Kolarick
+              p.spacing-none
+                | Git for Everyone Workshop - Part 1 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Dale Sande 
+          tr
+            td.align-right.padding-light.valign-top 10:45am
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Accessibility and the Modern Web 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Marcy Sutton
+              p.spacing-none
+                | Git for Everyone Workshop - Part 2 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Dale Sande 
+          tr
+            td.align-right.padding-light.valign-top 11:15pm
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light.valign-top 11:30pm
+            td.white.padding-light 
+              p.spacing-none
+                strong Keynote:&nbsp;
+                | Catalysts for Change: The New Expectations for Design Leadership 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Darrel Rhea
+          tr
+            td.align-right.padding-light.valign-top 12:30pm
+            td.white.padding-light Lunch Provided
+          tr
+            td.align-right.padding-light.valign-top 1:15pm
+            td.white.padding-light 
+              p.spacing-none
+                | How I Learned to Code by Making 180 Websites in 180 Days 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Jennifer Dewalt
+          tr
+            td.align-right.padding-light.valign-top 1:45pm
+            td.white.padding-light 15-minute break
+          tr
+            td.align-right.padding-light.valign-top 2:00pm
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Why pixel perfect isn't so perfect 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Jenny Mullins
+              p.spacing-none
+                | Intercultural Communication Workshop - Part 1 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Yingzhao Liu
+          tr
+            td.align-right.padding-light.valign-top 2:30pm
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Efficient Team Development Workflow 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Elisha Terada
+              p.spacing-none
+                | Intercultural Communication Workshop - Part 2 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Yingzhao Liu
+          tr
+            td.align-right.padding-light.valign-top 3:00pm
+            td.white.padding-light 15-minute break
+          tr
+          tr
+            td.align-right.padding-light.valign-top 3:15pm
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Collaboration: It's super easy, and we have the scars to prove it! 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Jody Rogers
+              p.spacing-none
+                | IxDA Workshop - Part 1
+          tr
+            td.align-right.padding-light.valign-top 3:45pm
+            td.white.padding-light 
+              p.spacing-none.leading
+                | Mastering Metaphor 
+                em.slightly-small.speaker-name
+                  | &nbsp;/&nbsp;Ash Bhoopathy
+              p.spacing-none
+                | IxDA Workshop - Part 2
+          tr
+            td.align-right.padding-light.valign-top 4:15pm
+            td.white.padding-light Presentations Conclude
 
 #synopsis.bg-white.padding-extra-loose
   .width-screen
