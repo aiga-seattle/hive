@@ -159,3 +159,158 @@ speaker_info = {
   talk_type: "breakout"
 }
 Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Deidre Kolarick",
+  company: "AnswerLab",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Deidre Kolarick</strong> is Director of UX Research at AnswerLab in New York City, where she is actively involved in tailoring UX research strategies that deliver actionable insights to clients. She has extensive experience with both quantitative and qualitative UX research methodologies in industries ranging from finance to the non-profit sector. She loves working with cross-functional teams and getting them engaged and excited about UX research. Deidre holds a PhD. in cognitive psychology from Yale University. She is also an adjunct professor of psychology at New York University, a tennis addict, and triathlete.",
+  slug: "deidre-kolarick",
+  headshot_filename: "deidreKolarick.jpg",
+  position: 9,
+  talk_title: "Keeping the U in UX: Research strategies for cross-disciplinary UX teams",
+  talk_description: "Successful UX design and strategy relies on actual users being represented throughout a product development cycle. However, cross-functional product development teams often face unique challenges when incorporating research in the design process. When users are ignored or forgotten, these challenges can result in missed opportunities and misguided design and development efforts. In this talk I’ll discuss the risks of doing bad research (or none at all) and use case studies and examples to introduce creative strategies for engaging product teams in user research regardless of timeframe or budget.",
+  talk_time: DateTime.new(2014, 06, 21, 10, 15, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Nathan Brutzman",
+  company: "Adobe",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "I'm an artist and a musician. I've been in the trenches and behind the dreaded impossible deadline. Passionate about UX. Seriously. I can't stop. Ask my (frequently annoyed) friends. My comments and opinions are not necessarily the opinions of Adobe Systems Inc. (wow, mouthful).",
+  slug: "nathan-brutzman",
+  headshot_filename: "nathanBrutzman.jpg",
+  position: 10,
+  talk_title: "I saw what you did there…but I don’t understand. (why talking to customers matters)",
+  talk_description: "TBA",
+  talk_time: DateTime.new(2014, 06, 21, 9, 0, 0, "-700"),
+  talk_room: "Downstairs",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Elisha Terada",
+  company: "Fresh Consulting",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Elisha Terada</strong> is the 'ninja' front-end developer. He has developed over 70 client websites in small to mid size projects. Elisha specializes in WordPress development including custom theme, plugin, and admin UI. With tech, design, and business skills, Elisha plans and executes on digital missions from start to finish.",
+  slug: "elisha-terada",
+  headshot_filename: "elishaTerada.jpg",
+  position: 11,
+  talk_title: "Efficient Team Development Workflow",
+  talk_description: "Today, developers from different backgrounds and timezones need to work on a project at the same time. Non-dev contributors like designers and clients need to update content. Managers need an up-to-date staging environment to provide feedback. All these demands will take you away from development. <br/><br/> At high level, this session will teach development strategies for agile collaboration with your team and your client.",
+  talk_time: DateTime.new(2014, 06, 21, 14, 30, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Marcy Sutton",
+  company: "Substantial",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Marcy Sutton</strong> is a developer at Substantial and also a Co-Chair and Instructor at the Seattle chapter of Girl Develop It. She's passionate about equal access to technology as well as education, and she spends much of her time fostering a diverse tech community. Marcy enjoys using and building thoughtfully designed, well-executed interfaces that delight and inspire people of varied abilities. In her free time she travels, rides bicycles, photographs street art and listens to lots of dance music.",
+  slug: "marcy-sutton",
+  headshot_filename: "marcy_Sutton.jpg",
+  position: 12,
+  talk_title: "Accessibility and the Modern Web",
+  talk_description: "The modern web has given unprecedented power and flexibility to designers and developers alike—allowing them to create increasingly sophisticated experiences for a widening range of physical platforms. For all of these improvements, however, the differently-abled are often forgotten throughout the process of design and implementation. How is this audience being left behind? How can we ensure that our experiences reach the widest audience possible? What does the modern web provide for the differently-abled and how can it be harnessed?",
+  talk_time: DateTime.new(2014, 06, 21, 10, 45, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Albert Shum",
+  company: "Microsoft",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Albert Shum</strong> directs the Windows Phone Design team at Microsoft. The team consists of interaction, visual, motion, industrial and brand designers along with user researchers & design program managers working in an open studio. Our team collaborates with engineering & business partners to create integrated mobile experiences for our consumers. Prior to Microsoft, Albert led the convergence of sports & technology efforts at Nike resulting with the digital Nike+ experience. Albert has a Master's of Product Design from the Stanford University, a Bachelor of Science Mechanical Engineering from the University of Waterloo, and the General Management Program from Harvard Business School. In his spare time, Albert is usually found riding his bike, hanging with his family and trying to perfect his cooking.",
+  slug: "albert-shum",
+  headshot_filename: "albertShum.jpg",
+  position: 13,
+  talk_title: "Personalizing Personal Computing: A Matter of Choice",
+  talk_description: "As designers, we seek to understand a customer’s needs, and how to delight them. But how well do we recognize our own biases in our work? There is a tension in striving toward the “right” design that just works homogeneously across devices, services, applications and platforms versus the diversity of choice—allowing for tailoring of experiences that is appropriate for a variety of task and individual tastes.  What choices do we make as design thinkers and makers to create the right balance for our customers?",
+  talk_time: DateTime.new(2014, 06, 20, 10, 45, 0, "-700"),
+  talk_room: "Downstairs",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Michi Broman",
+  company: "Blink UX",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Michi Broman</strong> joins Blink with seventeen years of experience in the digital realm, including user experience in mobile, social, online and television services. She is driven to excellence and is responsible for making sure the trains run on time and that we surpass our clients’ wildest expectations. Clients over the years have included AT&T, Cisco, BMW Canada, Vulcan Ventures, The Bill and Melinda Gates Foundation, Om Girl, Women in Cinema, multiple groups at Microsoft and many others too numerous to list. Her specialty: Creating clarity out of chaos.In previous lives, she hosted the Buns of Steel Power Yoga Workout with Michi Broman, was an actress in New York and LA and performed stand-up comedy. She currently lives with a fish monger who tosses at Pike Place Fish.",
+  slug: "michi-broman",
+  headshot_filename: "AmosRainsBroman.jpg",
+  position: 14,
+  talk_title: "Steering Clients in the Right Direction (or Turning North When Clients Head South)",
+  talk_description: "Michi Broman / Blink UX
+The greatest projects are delivered when client and project teams work in a collaborative partnership. Join the Project Managers from Blink — Michi Broman, Sarah Amos and Brigitt Rains — for an entertaining session where you'll learn about: <br/>getting your design approved and built; <br/> getting back on track when you miss the mark; <br/> why hand-offs are so important and how you can make them better; and <br/> tailoring your presentation to the audience",
+  talk_time: DateTime.new(2014, 06, 20, 16, 15, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Jody Rogers",
+  company: "JAMF",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "Former Product Manager for Adobe's Creative Cloud for Enterprise. Currently Principal Product Manager for the Apple-focused enterprise company, JAMF. Collage artist and gig poster designer on the side. Moderator for the Seattle Design Lecture series.",
+  slug: "jody-rogers",
+  headshot_filename: "jodyRogers.jpg",
+  position: 16,
+  talk_title: "Collaboration: It's super easy, and we have the scars to prove it!",
+  talk_description: "TBA",
+  talk_time: DateTime.new(2014, 06, 21, 15, 15, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Dale Sande",
+  company: "Code Fellows",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Dale Sande</strong> is the UX Design and Development lead instructor at Code Fellows, author, speaker, consultant, principal organizer for the Seattle Front-End and Sass Meetup and Co-Chair for Refresh Seattle. A real front-ender, Dale works seamlessly between C#/.NET, Rails and Node.js teams. With close to 15 years experience, Dale specializes in delivering modular and consistent front-end UI/UX through clean code and the promotion of Style-Guide driven development.",
+  slug: "dale-sande",
+  headshot_filename: "DaleSande.jpg",
+  position: 15,
+  talk_title: "Git for Everyone Workshop",
+  talk_description: "TBA",
+  talk_time: DateTime.new(2014, 06, 21, 10, 15, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
