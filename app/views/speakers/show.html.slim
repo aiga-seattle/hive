@@ -1,5 +1,5 @@
-#page-main
-  = image_tag "hive@2x.png", alt: "HIVE", id: "logo"
+#page-main.padding-medium
+  = link_to image_tag("hive@2x.png", alt: "HIVE", id: "logo"), root_path
 
 #speaker-page.bg-white
   .row.width-extra-wide.sans-serif.align-left.bg-light-gray
@@ -8,7 +8,8 @@
         | &#43; Speakers
 
   .row.width-extra-wide.sans-serif.align-left
-    .col-md-8.col-sm-4.col-xs-6.speaker-details
+    .col-sm-8.col-xs-12.speaker-details
+      = headshot_image_tag(@speaker.headshot_filename, class: "visible-xs spacing-loose")
       p.speaker-name = @speaker.name
       p.speaker-company = @speaker.company
       
@@ -21,10 +22,10 @@
 
       hr.border-thin
 
-      p.extra-small.spacing-loose =raw @speaker.bio
+      p.extra-small.spacing-loose =raw @speaker.formatted_bio
 
-    .col-md-4.col-sm-4.col-xs-6
-      = headshot_image_tag(@speaker.headshot_filename)
+    .col-sm-4.col-xs-12
+      = headshot_image_tag(@speaker.headshot_filename, class: "hidden-xs width-full")
       hr
       dl
         - if @speaker.website

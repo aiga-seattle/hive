@@ -25,4 +25,9 @@ class Speaker < ActiveRecord::Base
     talk_type == "breakout"
   end
 
+  def formatted_bio
+    # bold the presenter's name if it's at the beginning of the string
+    bio.gsub(/^#{name}/, "<strong>#{name}</strong>").html_safe
+  end
+
 end
