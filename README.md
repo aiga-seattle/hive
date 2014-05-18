@@ -41,3 +41,7 @@ To deploy to the production server:
 
     git push heroku master
 
+To run a rake task:
+
+    heroku rake --app [heroku/heroku-staging] rake ...
+

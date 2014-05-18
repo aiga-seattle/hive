@@ -9,46 +9,35 @@
 
   .row.width-extra-wide.sans-serif.align-left
     .col-md-8.col-sm-4.col-xs-6.speaker-details
-      p.speaker-name Nick Finck
-      p.speaker-company Amazon AWS
-      p.speaker-topic.keynote The Nuances of UX
+      p.speaker-name = @speaker.name
+      p.speaker-company = @speaker.company
+      
+      - if @speaker.keynote?
+        p.speaker-topic.keynote = @speaker.talk_title
+      - else
+        p.speaker-topic = @speaker.talk_title
 
-      p.extra-small
-        | When doing any kind of design work, the devil is always in the details. 
-        | It is easy and often important for us to quickly rush through our wireframes 
-        | and prototypes to meet a client deadline, but as professionals we must not 
-        | overlook the subtleties that can turn a good experience into a great experience. 
-        | This talk is about the little details we see in apps and websites we use every 
-        | day, but often fail to notice. We fail to notice them because they provide for 
-        | a much smoother user experience. You will learn how to design for these 
-        | experiences even with a tight deadline and within an agile workflow. After 
-        | this presentation you’ll never look at another app or website the same again.
+      p.extra-small =raw @speaker.talk_description
 
       hr.border-thin
 
-      p.extra-small.spacing-medium
-        strong Nick Finck 
-        | is a user experience professional who has worked in the web 
-        | industry for over a decade. He specializes in information architecture, 
-        | interaction design, usability and user research for web and mobile.
-
-      p.extra-small
-        | Nick has created web and mobile experiences for Fortune 500 companies 
-        | including Adobe, Intel, REI, Boeing, Google, and Oprah.com. He lives 
-        | and plays in Seattle, Washington, where he’s the Senior Manager of User 
-        | Experience at Amazon AWS, a highly reliable, scalable, low-cost 
-        | infrastructure platform in the cloud.
+      p.extra-small.spacing-medium =raw @speaker.bio
 
     .col-md-4.col-sm-4.col-xs-6
-      = headshot_image_tag("nickFinck.jpg")
+      = headshot_image_tag(@speaker.headshot_filename)
       hr
       dl
-        dt website
-        dd nickfinck.com
-        dt twitter
-        dd &#64;nickf
-        dt linkedin
-        dd nickfinck
+        - if @speaker.website
+          dt website
+          dd = @speaker.website
+
+        - if @speaker.twitter_user
+          dt twitter
+          dd = "@#{@speaker.twitter_user}"
+
+        - if @speaker.linkedin_user
+          dt linkedin
+          dd = @speaker.linkedin_user
 
       .btn-group-lg.spacing-loose
         = link_to "Register now", registration_url, class: "btn bg-coral"
