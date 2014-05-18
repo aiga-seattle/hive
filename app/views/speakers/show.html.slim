@@ -1,28 +1,34 @@
 #page-main
   = image_tag "hive@2x.png", alt: "HIVE", id: "logo"
 
-#speaker-page.bg-white.padding-extra-loose
-  .width-screen
-    h2.straight-black
-      | &#43; Speakers
+#speaker-page.bg-white
+  .row.width-extra-wide.sans-serif.align-left.bg-light-gray
+    .col-md-12
+      h2.straight-black
+        | &#43; Speakers
 
   .row.width-extra-wide.sans-serif.align-left
-    .col-md-3.col-sm-4.col-xs-6
-      p.uppercase.leading-tight.spacing-none
-        strong Nick Finck
-        br
-        em.coral.slightly-small
-          | /&nbsp;Amazon AWS
+    .col-md-8.col-sm-4.col-xs-6.speaker-details
+      p.speaker-name Nick Finck
+      p.speaker-company Amazon AWS
+      p.speaker-topic.keynote The Nuances of UX
 
-      p.uppercase.spacing-medium.leading-none
-        em.teal.small
-          strong Keynote:&nbsp;
-          The Nuances of UX
+      p.extra-small
+        | When doing any kind of design work, the devil is always in the details. 
+        | It is easy and often important for us to quickly rush through our wireframes 
+        | and prototypes to meet a client deadline, but as professionals we must not 
+        | overlook the subtleties that can turn a good experience into a great experience. 
+        | This talk is about the little details we see in apps and websites we use every 
+        | day, but often fail to notice. We fail to notice them because they provide for 
+        | a much smoother user experience. You will learn how to design for these 
+        | experiences even with a tight deadline and within an agile workflow. After 
+        | this presentation you’ll never look at another app or website the same again.
 
-      hr.border-wide
+      hr.border-thin
 
       p.extra-small.spacing-medium
-        | Nick Finck is a user experience professional who has worked in the web 
+        strong Nick Finck 
+        | is a user experience professional who has worked in the web 
         | industry for over a decade. He specializes in information architecture, 
         | interaction design, usability and user research for web and mobile.
 
@@ -33,7 +39,7 @@
         | Experience at Amazon AWS, a highly reliable, scalable, low-cost 
         | infrastructure platform in the cloud.
 
-    .col-md-3.col-sm-4.col-xs-6
+    .col-md-4.col-sm-4.col-xs-6
       = headshot_image_tag("nickFinck.jpg")
       hr
       dl
