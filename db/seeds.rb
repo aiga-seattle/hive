@@ -169,7 +169,7 @@ speaker_info = {
   linkedin_user: nil,
   bio: "<strong>Deidre Kolarick</strong> is Director of UX Research at AnswerLab in New York City, where she is actively involved in tailoring UX research strategies that deliver actionable insights to clients. She has extensive experience with both quantitative and qualitative UX research methodologies in industries ranging from finance to the non-profit sector. She loves working with cross-functional teams and getting them engaged and excited about UX research. Deidre holds a PhD. in cognitive psychology from Yale University. She is also an adjunct professor of psychology at New York University, a tennis addict, and triathlete.",
   slug: "deidre-kolarick",
-  headshot_filename: "deidreKolarick.jpg",
+  headshot_filename: "deidreKoarick.jpg",
   position: 9,
   talk_title: "Keeping the U in UX: Research strategies for cross-disciplinary UX teams",
   talk_description: "Successful UX design and strategy relies on actual users being represented throughout a product development cycle. However, cross-functional product development teams often face unique challenges when incorporating research in the design process. When users are ignored or forgotten, these challenges can result in missed opportunities and misguided design and development efforts. In this talk I’ll discuss the risks of doing bad research (or none at all) and use case studies and examples to introduce creative strategies for engaging product teams in user research regardless of timeframe or budget.",
@@ -277,15 +277,15 @@ Speaker.create!(speaker_info)
 
 
 speaker_info = {
-  name: "Jody Rogers",
+  name: "Jody Rodgers",
   company: "JAMF",
   website: nil,
   twitter_user: nil,
   linkedin_user: nil,
   bio: "Former Product Manager for Adobe's Creative Cloud for Enterprise. Currently Principal Product Manager for the Apple-focused enterprise company, JAMF. Collage artist and gig poster designer on the side. Moderator for the Seattle Design Lecture series.",
-  slug: "jody-rogers",
-  headshot_filename: "jodyRogers.jpg",
-  position: 16,
+  slug: "jody-rodgers",
+  headshot_filename: "jodyRodgers.jpg",
+  position: 15,
   talk_title: "Collaboration: It's super easy, and we have the scars to prove it!",
   talk_description: "TBA",
   talk_time: DateTime.new(2014, 06, 21, 15, 15, 0, "-700"),
@@ -304,10 +304,181 @@ speaker_info = {
   bio: "<strong>Dale Sande</strong> is the UX Design and Development lead instructor at Code Fellows, author, speaker, consultant, principal organizer for the Seattle Front-End and Sass Meetup and Co-Chair for Refresh Seattle. A real front-ender, Dale works seamlessly between C#/.NET, Rails and Node.js teams. With close to 15 years experience, Dale specializes in delivering modular and consistent front-end UI/UX through clean code and the promotion of Style-Guide driven development.",
   slug: "dale-sande",
   headshot_filename: "DaleSande.jpg",
-  position: 15,
+  position: 16,
   talk_title: "Git for Everyone Workshop",
   talk_description: "TBA",
   talk_time: DateTime.new(2014, 06, 21, 10, 15, 0, "-700"),
+  talk_room: "Downstairs",
+  talk_type: "workshop"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Bill Flora",
+  company: "Tectonic",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "After a 20-year career at Microsoft leading design efforts for Encarta Encyclopedia, Windows Media Center, Zune, Xbox, and the Microsoft Metro design language, Bill and his partners took the show on the road and founded Tectonic, a digital design firm based in Seattle’s Capitol Hill neighborhood. Tectonic envisions and creates software user experiences for Bang & Olufsen, Amazon, Microsoft, Beats by Dr. Dre, Sports Illustrated, Samsung, and many others. Their mission is simple: engage, inspire & delight.",
+  slug: "bill-flora",
+  headshot_filename: "BillFlora.jpg",
+  position: 17,
+  talk_title: "Story Driven Design",
+  talk_description: "In story—any story—there's always someone aiming for a goal. And there is always an obstacle standing in the way. This serves to define the purpose, direction and meaning of every action. In short, we know WHY. The bigger the obstacle, the bigger the story…and there is no story without conflict.",
+  talk_time: DateTime.new(2014, 06, 20, 15, 45, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "David Lifson",
+  company: "General Assembly",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>David Lifson</strong> is General Manager of Academics at General Assembly. Formerly, he was GM of Digital Product and Engineering, responsible for all technology at GA, from e-commerce website to internal tools to online education delivery. Prior to joining General Assembly, he co-founded Postling, a social media management tool for small businesses that he sold to LocalVox Media in 2012. He has also been VP of Product at Etsy, Technical Product Manager for Amazon's Personalized Recommendations team, and started his career as a software engineer on Amazon's Community team. He also volunteered for 3 years as the official AngelList Scout in NYC, connecting over 450 investors to high-potential startups.",
+  slug: "david-lifson",
+  headshot_filename: "DavidLifson.jpg",
+  position: 18,
+  talk_title: "Rapid Product Development Through User Research and Cross-functional Teams Workshop",
+  talk_description: "In this workshop we’ll discuss the development of EDM (a digital marketing resource) and Dash (HTML, CSS and Javascript training using fun, in-browser projects) through the lens of integrated product + design + engineering teams and user centered design.",
+  talk_time: DateTime.new(2014, 06, 20, 14, 30, 0, "-700"),
+  talk_room: "Downstairs",
+  talk_type: "workshop"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Melissa Scott",
+  company: "Substantial",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Melissa Scott</strong> is a Lead Designer and strategic thinker with a passion for creating brand-led products and digital experiences that connects people, lifestyle, business, and technology. She currently leads a multi-disciplinary team of developers and designers at Substantial in Seattle — working to craft engaging products for innovators ranging from startups, non-profits and Fortune 100 companies. <br/><br/> With a background in branding at the global innovation agency Wolff Olins, Melissa has worked in New York, San Francisco, Dubai and Seattle to creatively develop game-changing brands including Distiller, Google, USA Today, MTV, AOL, PBS, the Asian Art Museum, Mozilla, Bloomingdale's and PwC. She also was a founding member and design leader for the award-winning oral-health technology start-up, GLO Science.",
+  slug: "melissa-scott",
+  headshot_filename: "MelissaScott.jpg",
+  position: 19,
+  talk_title: "Iterating to Success: Collaborative Product Development",
+  talk_description: "One of the main “benefits” to the traditional waterfall process is that it provides plenty of time for designers to refine their output, thinking through the big picture as well as the details before implementation. However, agile/lean workflow upends that to a large degree, with design delivered in a more just-in-time fashion.  <br/><br/> Faster turnaround isn’t anathema to producing delightful work, but there is a balancing act that needs to be done. Much as code is “refactored” throughout a project, the same occurs with design, with it evolving as needs shift and as the project comes together. <br/><br/> In this talk Melissa and Barton will describe her experiences with Distiller, a Substantial client project that was built in agile/lean fashion and has evolved over time. Using validation and an iterative approach they’ve launched Distiller and turned it into an experience that has resonated with users and critics alike.",
+  talk_time: DateTime.new(2014, 06, 20, 15, 0, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Barton McGuire",
+  company: "Substantial",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Barton McGuire</strong> is a Developer at Substantial with an unmitigated passion for making things. He makes music and musical instruments, bizarre analog electronics, and the best kombucha you’ve ever had. At Substantial he makes web-based software. By focusing on test-driven-development, iterative approaches to project strategy, and through fierce collaboration with his brilliant coworkers, he makes that web-based software real good.",
+  slug: "barton-mcguire",
+  headshot_filename: "BartonMcGuire.jpg",
+  position: 20,
+  talk_title: "Iterating to Success: Collaborative Product Development",
+  talk_description: "One of the main “benefits” to the traditional waterfall process is that it provides plenty of time for designers to refine their output, thinking through the big picture as well as the details before implementation. However, agile/lean workflow upends that to a large degree, with design delivered in a more just-in-time fashion.  <br/><br/> Faster turnaround isn’t anathema to producing delightful work, but there is a balancing act that needs to be done. Much as code is “refactored” throughout a project, the same occurs with design, with it evolving as needs shift and as the project comes together. <br/><br/> In this talk Melissa and Barton will describe her experiences with Distiller, a Substantial client project that was built in agile/lean fashion and has evolved over time. Using validation and an iterative approach they’ve launched Distiller and turned it into an experience that has resonated with users and critics alike.",
+  talk_time: DateTime.new(2014, 06, 20, 15, 0, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Devin Liddell",
+  company: "Teague",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Devin Liddell</strong> leads the brand strategy offer for design consultancy TEAGUE, working collaboratively with clients such as Anheuser-Busch InBev, The Boeing Company, Intel, JW Marriott, Microsoft, and SC Johnson to create research-driven brand strategies and consumer experiences. With more than a decade of experience in brand strategy and design, Devin has worked across a broad spectrum of industries: aerospace, higher education, software/technology, food and beverage, and retail; his past clients include Amazon, GE, Make-a-Wish Foundation, Nordstrom, Seattle Symphony and Starbucks. His work has been featured in Brandweek and Brand Strategy, and he teaches regularly at the School of Visual Concepts in Seattle, Washington.",
+  slug: "devin-liddell",
+  headshot_filename: "devinLiddell.jpg",
+  position: 21,
+  talk_title: "Breaking the Law: Lessons from the Underworld on Design and Innovation",
+  talk_description: "Criminals are the consummate rule breakers. While their activities are, by definition, unacceptable to society, they can also be undeniably creative and inventive. From smugglers and counterfeiters to grifters and hackers, criminals are often at the vanguard of technical excellence and innovation. And this innovation is continuous. Thus, many criminal subcultures possess powerful brands and their ongoing success reflects adaptive ”design thinking.” <br/><br/> As designers, strategists, and technologists, we are also challenged to continuously innovate in highly competitive marketplaces. So, as fellow innovators, what lessons can we learn from the underworld? What mindsets and methodologies can we borrow and apply to our own challenges?",
+  talk_time: DateTime.new(2014, 06, 20, 10, 45, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Yingzhao Liu",
+  company: "LinkedIn",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Yingzhao Liu</strong> is native to mainland China, and came to the U.S. at age 18. She leads design efforts for emerging markets at LinkedIn, empowering the world's young professionals with greater opportunity. In addition to 15+ years designing user experiences, Ying is a translator and interpreter, and an experiential and outdoor educator. She has traveled to five continents and 30 countries, always affirmed by people's relationship with the environment they live in--their creativity and spirituality in everyday life. At a young age she had envisioned a world without borders, and is constantly inspired by the next generation of global citizens and their ability to bring about that future.",
+  slug: "yingzhao-liu",
+  headshot_filename: "LiuYingzhao.jpg",
+  position: 22,
+  talk_title: "Intercultural Communication Workshop",
+  talk_description: "We communicate with people from other cultures more than ever before; and though on the surface the American style of communication is prevalent, those who have more nuanced understanding would be able to build stronger connections and have more influence. <br/><br/> This workshop will teach the participants tools to recognize different cultural communication styles; feel how the differences work in subtle and not so subtle ways; and how awareness allows us to become more fluid in how we connect with our coworkers, clients and suppliers.",
+  talk_time: DateTime.new(2014, 06, 21, 14, 0, 0, "-700"),
+  talk_room: "Downstairs",
+  talk_type: "workshop"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Matt Conway",
+  company: "Frog",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "I've been in the business of making things easy to use, fun, and beautiful for over twenty years. My career started with inventing interaction techniques for virtual reality research systems and making video game editors for kids and has lead me to my position at frog, where today I am a Creative Director in frog's Seattle studio. I work with Fortune 200 clients to craft great experiences on mobile devices, in cars, and in any place where humans come in contact with formal, complex systems.",
+  slug: "matt-conway",
+  headshot_filename: "Matt_Conway.jpg",
+  position: 23,
+  talk_title: "Design is Design",
+  talk_description: "We want people to fall in love with what we make but at the same time, we want to have a dependable, predictable, proven process for successfully designing and delivering our solutions to clients on time and under budget.  How can this be?  Nobody really believes that delight and love can be reduced to a recipe, right? <br/><br/> This talk is about understanding how the contradiction isn’t really a contradiction. Process can be used to help our clients fall in love with the things we create by being the focus of our design thinking.",
+  talk_time: DateTime.new(2014, 06, 20, 13, 30, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Jake Cook",
+  company: "Tadpull",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Jake Cook</strong> works at the intersection of design, marketing and technology at Tadpull, a user-first digital shop, where he applies design thinking principles to digital experiences to prototype, design, code and measure the results. Client engagements have included Microsoft, The Webby Awards, Internet Week NY, Tai Ping International, The Lowline NYC, Atlantic Public Media and DonorsChoose.org. <br/><br/> Jake also teaches courses at Montana State University and Minneapolis College Art & Design (MCAD) on Integrated Digital Marketing and Lean Startups. <br/><br/> In his spare time, he is a lucky writer for Behance’s 99U, Startup Revolution, and Smashing Magazine.",
+  slug: "jake-cook",
+  headshot_filename: "Jake.jpg",
+  position: 24,
+  talk_title: "Digital Marketing: A User-First Approach",
+  talk_description: "",
+  talk_time: DateTime.new(2014, 06, 20, 10, 15, 0, "-700"),
+  talk_room: "Downstairs",
+  talk_type: "breakout"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Ryan Harasyn",
+  company: "Substantial",
+  website: nil,
+  twitter_user: nil,
+  linkedin_user: nil,
+  bio: "<strong>Ryan Harasyn</strong> heads Substantial’s design practice, focusing on product strategy through implementation. As a seasoned interaction designer, Ryan has built both physical and digital products spanning multiple industries and user types. From military applications to consumer lifestyle products, Ryan has blended technology, design and strategy to deliver breakthrough products and brand experiences.",
+  slug: "ryan-harasyn",
+  headshot_filename: "RyanHarasyn.jpg",
+  position: 25,
+  talk_title: "Fostering Digital Craftsmanship",
+  talk_description: "We know intuitively whether something “sucks” or not, but how can we really define what a quality product is in the digital realm? Whether it’s writing code that’s maintainable, modular, and reusable, or designing for both high usability and delight, as product builders we now have to concern ourselves with areas beyond our particular discipline. How can we stretch ourselves—and our teams—to bring the same level of polish as our heroes in the physical product realm? How can you instill this mindset throughout your organization? How do you balance creativity and innovation with reality and pragmatism? This talk will discuss how we can define what quality is and introduce a cross-disciplinary framework that can guide you and your teams to excellence in your work.",
+  talk_time: DateTime.new(2014, 06, 20, 10, 15, 0, "-700"),
   talk_room: "Great Hall",
   talk_type: "breakout"
 }
