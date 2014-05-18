@@ -1,0 +1,50 @@
+// Place all the styles related to the speakers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#page-main {
+  padding-top: 40px;
+
+  background-image: url(<%= image_path("seattle_aerial@2x.jpg") %>);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  #logo {
+    @extend .padding-medium;
+
+    width: 100%;
+    max-width: 413px;
+    margin-bottom: 33px;
+  }
+
+  .btn-group-lg {
+
+    > .btn {
+      @extend .spacing-medium;
+      @extend .side-spaced;
+      @extend .border-none;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  #page-main {
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #page-main {
+    padding-top: 64px;
+  }
+
+  #header {
+    position: static;
+  }
+
+  #call-for-proposals {
+    padding-top: 64px;
+  }
+}
