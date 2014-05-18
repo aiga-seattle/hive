@@ -7,6 +7,7 @@ Hive::Application.routes.draw do
 
   resources :subscriptions, only: :create
   resources :proposals, only: [:new, :create]
+  resources :speakers, only: :show
 
   # Redirect to Registration
   get '/register', to: redirect("http://hive-seattle-2014.eventbrite.com/")

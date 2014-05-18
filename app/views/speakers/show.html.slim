@@ -1,0 +1,50 @@
+#main
+  = image_tag "hive@2x.png", alt: "HIVE", id: "logo", class: "spacing-extra-loose"
+
+#speaker-page.bg-white.padding-extra-loose
+  .width-screen
+    h2.straight-black
+      | &#43; Speakers
+
+  .row.width-extra-wide.sans-serif.align-left
+    .col-md-3.col-sm-4.col-xs-6
+      p.uppercase.leading-tight.spacing-none
+        strong Nick Finck
+        br
+        em.coral.slightly-small
+          | /&nbsp;Amazon AWS
+
+      p.uppercase.spacing-medium.leading-none
+        em.teal.small
+          strong Keynote:&nbsp;
+          The Nuances of UX
+
+      hr.border-wide
+
+      p.extra-small.spacing-medium
+        | Nick Finck is a user experience professional who has worked in the web 
+        | industry for over a decade. He specializes in information architecture, 
+        | interaction design, usability and user research for web and mobile.
+
+      p.extra-small
+        | Nick has created web and mobile experiences for Fortune 500 companies 
+        | including Adobe, Intel, REI, Boeing, Google, and Oprah.com. He lives 
+        | and plays in Seattle, Washington, where he’s the Senior Manager of User 
+        | Experience at Amazon AWS, a highly reliable, scalable, low-cost 
+        | infrastructure platform in the cloud.
+
+    .col-md-3.col-sm-4.col-xs-6
+      = headshot_image_tag("nickFinck.jpg")
+      hr
+      dl
+        dt website
+        dd nickfinck.com
+        dt twitter
+        dd &#64;nickf
+        dt linkedin
+        dd nickfinck
+
+      .btn-group-lg.spacing-loose
+        = link_to "Register now", registration_url, class: "btn bg-coral"
+
+= render "layouts/footer"
