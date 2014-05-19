@@ -2,66 +2,65 @@
   = link_to image_tag("hive@2x.png", alt: "HIVE", id: "logo"), root_path
 
 #speaker-page.bg-white
-  .row.sans-serif.align-left.bg-light-gray
+  .sans-serif.align-left.bg-light-gray
     .width-extra-wide
-      .col-md-12
-        h2.straight-black
-          | &#43; Speakers
+      .row
+        .col-md-12
+          h2.straight-black
+            | &#43; Speakers
 
-  .row.width-extra-wide.sans-serif.align-left
-    .col-sm-8.col-xs-12.speaker-details
-      = headshot_image_tag(@speaker.headshot_filename, class: "visible-xs spacing-loose max-width-full")
-      p.speaker-name = @speaker.name
-      p.speaker-company = @speaker.company
+  .width-extra-wide
+    .row.sans-serif.align-left
+      .col-sm-8.col-xs-12.speaker-details
+        = headshot_image_tag(@speaker.headshot_filename, class: "visible-xs spacing-loose max-width-full")
+        p.speaker-name = @speaker.name
+        p.speaker-company = @speaker.company
       
-      - if @speaker.keynote?
-        p.speaker-topic.keynote = @speaker.talk_title
-      - else
-        p.speaker-topic = @speaker.talk_title
+        - if @speaker.keynote?
+          p.speaker-topic.keynote = @speaker.talk_title
+        - else
+          p.speaker-topic = @speaker.talk_title
 
-      p.extra-small =raw @speaker.talk_description
+        p.extra-small =raw @speaker.talk_description
 
-      hr.border-thin
+        hr.border-thin
 
-      p.extra-small.spacing-loose =raw @speaker.formatted_bio
+        p.extra-small.spacing-loose =raw @speaker.formatted_bio
 
-    .col-sm-4.col-xs-12.speaker-profile
-      = headshot_image_tag(@speaker.headshot_filename, class: "hidden-xs width-full")
-      hr
-      dl
-        - if @speaker.website
-          dt website
-          dd = link_to @speaker.website, @speaker.website, target: "_blank"
+      .col-sm-4.col-xs-12.speaker-profile
+        = headshot_image_tag(@speaker.headshot_filename, class: "hidden-xs width-full")
+        hr
+        dl
+          - if @speaker.website
+            dt website
+            dd = link_to @speaker.website, @speaker.website, target: "_blank"
 
-        - if @speaker.twitter_user
-          dt twitter
-          dd = link_to "@#{@speaker.twitter_user}", "https://twitter.com/#{@speaker.twitter_user}", target: "_blank"
+          - if @speaker.twitter_user
+            dt twitter
+            dd = link_to "@#{@speaker.twitter_user}", "https://twitter.com/#{@speaker.twitter_user}", target: "_blank"
 
-        - if @speaker.linkedin_user
-          dt linkedin
+          - if @speaker.linkedin_user
+            dt linkedin
 
-          - if @speaker.linkedin_user !~ /^http/
-              dd = link_to @speaker.linkedin_user, "https://linkedin.com/in/#{@speaker.linkedin_user}", target: "_blank"
-          - else              
-              dd = link_to "LinkedIn Profile", @speaker.linkedin_user, target: "_blank"
+            - if @speaker.linkedin_user !~ /^http/
+                dd = link_to @speaker.linkedin_user, "https://linkedin.com/in/#{@speaker.linkedin_user}", target: "_blank"
+            - else              
+                dd = link_to "LinkedIn Profile", @speaker.linkedin_user, target: "_blank"
 
-      .btn-group-lg.spacing-loose
-        = link_to "Register now", registration_url, class: "btn bg-coral"
+        .btn-group-lg.spacing-loose
+          = link_to "Register now", registration_url, class: "btn bg-coral"
 
-  .row.sans-serif.align-left.bg-light-gray.header.hidden-xs
+  .sans-serif.align-left.bg-light-gray.header.padding-bottom-loose
     .width-extra-wide
-      .col-md-12
-        h3.straight-black
-          | Other Speakers
+      h3.straight-black
+        | Other Speakers
 
-  .row.sans-serif.align-left.bg-light-gray.hidden-xs
-    .width-extra-wide.navigation
-      - @speakers.each_slice((@speakers.count / 3.0).ceil) do |column|
-        .col-sm-4
-          ul.speaker-nav
-            - column.each do |speaker|
-              li = link_to speaker.name, speaker_path(speaker), name: "speaker-#{speaker.slug}", class: speaker.id == @speaker.id ? "speaker-selected" : ""
-      .clearfix
+      .row
+        - @speakers.each_slice((@speakers.count / 3.0).ceil) do |column|
+          .col-sm-4.col-xs-12
+            ul.speaker-nav
+              - column.each do |speaker|
+                li = link_to speaker.name, speaker_path(speaker), name: "speaker-#{speaker.slug}", class: speaker.id == @speaker.id ? "speaker-selected" : ""
 
 
 = render "layouts/footer"
