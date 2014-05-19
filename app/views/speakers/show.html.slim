@@ -26,20 +26,24 @@
       p.extra-small.spacing-loose =raw @speaker.formatted_bio
 
     .col-sm-4.col-xs-12.speaker-profile
-      = headshot_image_tag(@speaker.headshot_filename, class: "hidden-xs width-full speaker-headshot")
+      = headshot_image_tag(@speaker.headshot_filename, class: "hidden-xs width-full")
       hr
       dl
         - if @speaker.website
           dt website
-          dd = @speaker.website
+          dd = link_to @speaker.website, @speaker.website, target: "_blank"
 
         - if @speaker.twitter_user
           dt twitter
-          dd = "@#{@speaker.twitter_user}"
+          dd = link_to "@#{@speaker.twitter_user}", "https://twitter.com/#{@speaker.twitter_user}", target: "_blank"
 
         - if @speaker.linkedin_user
           dt linkedin
-          dd = @speaker.linkedin_user
+
+          - if @speaker.linkedin_user !~ /^http/
+              dd = link_to @speaker.linkedin_user, "https://linkedin.com/in/#{@speaker.linkedin_user}", target: "_blank"
+          - else              
+              dd = link_to "LinkedIn Profile", @speaker.linkedin_user, target: "_blank"
 
       .btn-group-lg.spacing-loose
         = link_to "Register now", registration_url, class: "btn bg-coral"
