@@ -355,7 +355,7 @@ Speaker.create!(speaker_info)
 speaker_info = {
   name: "Melissa Scott",
   company: "Substantial",
-  website: "http://www.hellomelissa.com/",
+  website: "http://www.substantial.com/",
   twitter_user: "Hello_Melissa",
   linkedin_user: "melissascott",
   bio: "Melissa Scott is a Lead Designer and strategic thinker with a passion for creating brand-led products and digital experiences that connects people, lifestyle, business, and technology. She currently leads a multi-disciplinary team of developers and designers at Substantial in Seattle — working to craft engaging products for innovators ranging from startups, non-profits and Fortune 100 companies. <br/><br/> With a background in branding at the global innovation agency Wolff Olins, Melissa has worked in New York, San Francisco, Dubai and Seattle to creatively develop game-changing brands including Distiller, Google, USA Today, MTV, AOL, PBS, the Asian Art Museum, Mozilla, Bloomingdale's and PwC. She also was a founding member and design leader for the award-winning oral-health technology start-up, GLO Science.",
@@ -374,7 +374,7 @@ Speaker.create!(speaker_info)
 speaker_info = {
   name: "Barton McGuire",
   company: "Substantial",
-  website: nil,
+  website: "http://www.substantial.com/",
   twitter_user: "bartonmcguire",
   linkedin_user: "https://www.linkedin.com/pub/barton-mcguire/5b/17/646",
   bio: "Barton McGuire is a Developer at Substantial with an unmitigated passion for making things. He makes music and musical instruments, bizarre analog electronics, and the best kombucha you’ve ever had. At Substantial he makes web-based software. By focusing on test-driven-development, iterative approaches to project strategy, and through fierce collaboration with his brilliant coworkers, he makes that web-based software real good.",
