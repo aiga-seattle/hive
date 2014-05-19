@@ -2,11 +2,19 @@
   = link_to image_tag("hive@2x.png", alt: "HIVE", id: "logo"), root_path
 
 #speaker-page.bg-white
-  .row.sans-serif.align-left.bg-light-gray
+  .row.sans-serif.align-left.bg-light-gray.header
     .width-extra-wide
       .col-md-12
         h2.straight-black
           | &#43; Speakers
+
+  .row.sans-serif.align-left.bg-light-gray.hidden-xs.navigation
+    .width-extra-wide
+      - @speakers.each_slice((@speakers.count / 3.0).ceil) do |column|
+        .col-sm-4
+          ul.speaker-nav
+            - column.each do |speaker|
+              li = link_to speaker.name, speaker_path(speaker), name: "speaker-#{speaker.slug}", class: speaker.id == @speaker.id ? "speaker-selected" : ""
 
   .row.width-extra-wide.sans-serif.align-left
     .col-sm-8.col-xs-12.speaker-details
