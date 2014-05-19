@@ -6,15 +6,7 @@
     .width-extra-wide
       .col-md-12
         h2.straight-black
-          | &#43; Speakers
-
-  .row.sans-serif.align-left.bg-light-gray.hidden-xs.navigation
-    .width-extra-wide
-      - @speakers.each_slice((@speakers.count / 3.0).ceil) do |column|
-        .col-sm-4
-          ul.speaker-nav
-            - column.each do |speaker|
-              li = link_to speaker.name, speaker_path(speaker), name: "speaker-#{speaker.slug}", class: speaker.id == @speaker.id ? "speaker-selected" : ""
+          | Speaker
 
   .row.width-extra-wide.sans-serif.align-left
     .col-sm-8.col-xs-12.speaker-details
@@ -55,5 +47,21 @@
 
       .btn-group-lg.spacing-loose
         = link_to "Register now", registration_url, class: "btn bg-coral"
+
+  .row.sans-serif.align-left.bg-light-gray.header
+    .width-extra-wide
+      .col-md-12
+        h3.straight-black
+          | Other Speakers
+
+  .row.sans-serif.align-left.bg-light-gray.hidden-xs
+    .width-extra-wide.navigation
+      - @speakers.each_slice((@speakers.count / 3.0).ceil) do |column|
+        .col-sm-4
+          ul.speaker-nav
+            - column.each do |speaker|
+              li = link_to speaker.name, speaker_path(speaker), name: "speaker-#{speaker.slug}", class: speaker.id == @speaker.id ? "speaker-selected" : ""
+      .clearfix
+
 
 = render "layouts/footer"
