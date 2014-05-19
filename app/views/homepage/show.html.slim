@@ -31,24 +31,21 @@
         .clearfix.hidden-sm
 
       .col-md-3.col-sm-4.col-xs-6
-        a name="speaker-#{speaker.slug}"
-        = headshot_image_tag(speaker.headshot_filename)
-        hr.border-wide
-        p.uppercase.leading-tight.spacing-none
-          strong = speaker.name
-          br
-          em.coral.slightly-small
-            | /&nbsp;
-            = speaker.company
+        = link_to speaker_path(speaker), name: "speaker-#{speaker.slug}" do
+          = headshot_image_tag(speaker.headshot_filename)
+          hr.border-wide
+          p.uppercase.leading-tight.spacing-none
+            strong.black = speaker.name
+            br
+            em.coral.slightly-small
+              | /&nbsp;
+              = speaker.company
 
-        p.uppercase.spacing-loose.leading-none
-          em.teal.small
-            - if speaker.keynote?
-              strong Keynote:&nbsp;
-            = speaker.talk_title
-
-        p.extra-small.spacing-medium =raw speaker.bio
-
+          p.uppercase.spacing-loose.leading-none
+            em.teal.small
+              - if speaker.keynote?
+                strong Keynote:&nbsp;
+              = speaker.talk_title
 
   .width-screen
     h3.straight-black
