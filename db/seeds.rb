@@ -458,7 +458,7 @@ speaker_info = {
   headshot_filename: "Jake.jpg",
   position: 24,
   talk_title: "Digital Marketing: A User-First Approach",
-  talk_description: "",
+  talk_description: "See how user driven tactics can produce big results for digital marketing initiatives. Collaborating on the work of UX teams, digital marketers are discovering how these insights can drive creative brand experiences that surprise and reward customers and ultimately earn loyalty online.",
   talk_time: DateTime.new(2014, 06, 20, 10, 15, 0, "-700"),
   talk_room: "Downstairs",
   talk_type: "breakout"
