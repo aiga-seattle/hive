@@ -523,3 +523,27 @@ speaker_info = {
 Speaker.create!(speaker_info)
 
 
+speaker_info = {
+  name: "Steve Johnson",
+  company: "LinkedIn",
+  website: nil,
+  twitter_user: "bydisgn",
+  linkedin_user: "esjohnson",
+  bio: %{
+Technology professional specializing in the development of highly performant, creative, and diverse User Experience organizations at scale.<br/><br/>
+Currently leading a multi-disciplinary team at LinkedIn (Product Designers, Brand and Marketing Designers, Web Developers, Researchers, and Voice & Tone specialists) which has created a multi-platform experience model that's transformed how LinkedIn members achieve their goals via mobile, desktop, and the web.<br/><br/>
+Inspiration: A mixture of user-centered design, pop-culture, and cognitive science.<br/><br/>
+Philosophy around building great products: Design a collaborative and empowered organization that optimizes globally and is accountable to key business metrics & company goals.<br/>
+  },
+  slug: "steve-johnson",
+  headshot_filename: "SteveJohnson.jpg",
+  position: 0,
+  talk_title: "TBA",
+  talk_description: "TBA",
+  talk_time: DateTime.new(2014, 06, 20, 9, 15, 0, "-700"),
+  talk_room: "Great Hall",
+  talk_type: "keynote"
+}
+Speaker.create!(speaker_info)
+
+

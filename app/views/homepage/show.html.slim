@@ -155,7 +155,12 @@
             td.white.padding-light Welcome
           tr
             td.align-right.padding-light.valign-top 9:15am
-            td.white.padding-light Opening Keynote - TBA
+            td.white.padding-light 
+              p.spacing-none.leading
+                = link_to speaker_path("steve-johnson"), class: "white" do
+                  | Opening Keynote
+                  em.slightly-small.nowrap
+                    |  /&nbsp;Steve Johnson
           tr
             td.align-right.padding-light.valign-top 10:15am
             td.white.padding-light
