@@ -287,7 +287,7 @@ speaker_info = {
   headshot_filename: "jodyRodgers.jpg",
   position: 15,
   talk_title: "Collaboration: It's super easy, and we have the scars to prove it!",
-  talk_description: "TBA",
+  talk_description: "A panel discussion on collaboration with Jenny Mullins and Elisha Terada.",
   talk_time: DateTime.new(2014, 06, 21, 15, 15, 0, "-700"),
   talk_room: "Great Hall",
   talk_type: "breakout"
@@ -499,6 +499,25 @@ speaker_info = {
   talk_description: "With the rise of responsive design it's becoming less practical to show static photoshop comps to clients which can never show what your design will look like on a range of devices. Prototyping in HTML/CSS allows for a faster, more flexible workflow and allows us to see designs in real time and get real feedback from user testing. In this workshop we will learn how to explain responsive design to clients and create a product which we can hand off to developers.",
   talk_time: DateTime.new(2014, 06, 20, 15, 45, 0, "-700"),
   talk_room: "Downstairs",
+  talk_type: "workshop"
+}
+Speaker.create!(speaker_info)
+
+
+speaker_info = {
+  name: "Ash Bhoopathy",
+  company: "Sequoia Capital",
+  website: nil,
+  twitter_user: "AshBhoopathy",
+  linkedin_user: "ashbhoopathy",
+  bio: "Ash is a serial entrepreneur and designer in residence at Sequoia Capital. In the past, he’s started an ed tech company backed by the Gates foundation, and a food marketplace connecting food lovers to gourmet chefs. Ash loves thinking about the intersection between design research and the lean startup movement and is excited by all of the possibilities that ‘mobile’ has to offer. He splits his time between Seattle and San Francisco.",
+  slug: "ash-bhoopathy",
+  headshot_filename: "AshBhoopathy.jpg",
+  position: 27,
+  talk_title: "Mastering Metaphor: One of the most powerful tools in an entrepreneur’s toolbox",
+  talk_description: "As a startup, you are doing something novel, changing the world, and making people adopt new behaviors.   At the same time, you’re pitching to get your team and investors aligned with your vision.   I’m going to give lots of examples for how startups can use visual & verbal metaphors to incite change.  (Making the strange familiar, making the familiar strange).",
+  talk_time: DateTime.new(2014, 06, 21, 15, 45, 0, "-700"),
+  talk_room: "Great Hall",
   talk_type: "workshop"
 }
 Speaker.create!(speaker_info)

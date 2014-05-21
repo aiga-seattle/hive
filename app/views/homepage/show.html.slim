@@ -409,9 +409,10 @@
             td.align-right.padding-light.valign-top 3:45pm
             td.white.padding-light 
               p.spacing-none.leading
-                | Mastering Metaphor 
-                em.slightly-small.nowrap
-                  |  /&nbsp;Ash Bhoopathy
+                = link_to speaker_path("ash-bhoopathy"), class: "white" do
+                  | Mastering Metaphor 
+                  em.slightly-small.nowrap
+                    |  /&nbsp;Ash Bhoopathy
               p.spacing-none
                 | IxDA Workshop - Part 2
           tr
