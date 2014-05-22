@@ -538,7 +538,7 @@ Philosophy around building great products: Design a collaborative and empowered 
   slug: "steve-johnson",
   headshot_filename: "SteveJohnson.jpg",
   position: 0,
-  talk_title: "TBA",
+  talk_title: "Great Teams = Greater Products",
   talk_description: "TBA",
   talk_time: DateTime.new(2014, 06, 20, 9, 15, 0, "-700"),
   talk_room: "Great Hall",
