@@ -1,0 +1,9 @@
+tr[class=css_class]
+  td.period= format_period(start_time, end_time)
+  td.detail
+    = link_to speaker_path(slug), class: "white" do
+      = "#{title} ".html_safe
+      em.slightly-small.nowrap
+        = "/&nbsp;#{name}".html_safe
+  td.room
+    span.room= room

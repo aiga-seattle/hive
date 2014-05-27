@@ -142,12 +142,32 @@
     .row
       .col-sm-12.speaker-column
         p.white.spacing-medium Friday, June 20
+        table.speaker-table
+          tr
+            td.period= format_period("8:00", "9:00 am")
+            td.detail Registration and coffee
+            td.room
+          tr
+            td.period= format_period("9:00", "9:15 am")
+            td.detail Welcome
+            td.room 
+              span.room GH
+
+          = schedule_row start_time: "9:15", end_time: "10:00 am", slug: "steve-johnson", title: "Opening Keynote", name: "Steve Johnson", room: "GH"
+
+          = schedule_break("10:00", "10:15 am")
+
+          = schedule_row start_time: "10:15", end_time: "10:45 am", slug: "ryan-harasyn", title: "Fostering Digital Craftsmanship", name: "Ryan Harasyn", room: "GH", css_class: "block-a"
+
+          = schedule_row start_time: "10:15", end_time: "10:45 am", slug: "jacob-cook", title: "Digital Marketing: A User-First Approach", name: "Jacob Cook", room: "B", css_class: "block-a"
+
+
         table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose.speaker-table
           tr
-            td.align-right.padding-light.width-120.valign-top 8:00am
+            td.align-right.padding-light.width-120.valign-top 8:00&#151;9:00am
             td.white.padding-light Registration and coffee
           tr
-            td.align-right.padding-light.valign-top 9:00am
+            td.align-right.padding-light.valign-top 8:00&#045;9:15am
             td.white.padding-light Welcome
           tr
             td.align-right.padding-light.valign-top 9:15am
