@@ -143,153 +143,54 @@
       .col-sm-12.speaker-column
         p.white.spacing-medium Friday, June 20
         table.speaker-table
-          tr
-            td.period= format_period("8:00", "9:00 am")
-            td.detail Registration and coffee
-            td.room
-          tr
-            td.period= format_period("9:00", "9:15 am")
-            td.detail Welcome
-            td.room 
-              span.room GH
+          = render partial: "schedule_legend"
 
-          = schedule_row start_time: "9:15", end_time: "10:00 am", slug: "steve-johnson", title: "Opening Keynote", name: "Steve Johnson", room: "GH"
+          tbody
+            = schedule_break("8:00", "9:00 am", "Registration and coffee")
 
-          = schedule_break("10:00", "10:15 am")
+            tr.schedule_row
+              td.period= format_period("9:00", "9:15 am")
+              td.detail
+                | Kickoff
+              td.room-assignment
+                .room.room-GH
+                  span GH
 
-          = schedule_row start_time: "10:15", end_time: "10:45 am", slug: "ryan-harasyn", title: "Fostering Digital Craftsmanship", name: "Ryan Harasyn", room: "GH", css_class: "block-a"
+            = schedule_row start_time: "9:15", end_time: "10:00 am", slug: "steve-johnson", title: "Opening Keynote", name: "Steve Johnson", room: "GH"
 
-          = schedule_row start_time: "10:15", end_time: "10:45 am", slug: "jacob-cook", title: "Digital Marketing: A User-First Approach", name: "Jacob Cook", room: "B", css_class: "block-a"
+            = schedule_break("10:00", "10:15 am")
 
+            = schedule_row start_time: "10:15", end_time: "10:45 am", slug: "ryan-harasyn", title: "Fostering Digital Craftsmanship", name: "Ryan Harasyn", room: "GH", css_class: "block-a"
 
-        table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose.speaker-table
-          tr
-            td.align-right.padding-light.width-120.valign-top 8:00&#151;9:00am
-            td.white.padding-light Registration and coffee
-          tr
-            td.align-right.padding-light.valign-top 8:00&#045;9:15am
-            td.white.padding-light Welcome
-          tr
-            td.align-right.padding-light.valign-top 9:15am
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("steve-johnson"), class: "white" do
-                  | Opening Keynote
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Steve Johnson
-          tr
-            td.align-right.padding-light.valign-top 10:15am
-            td.white.padding-light
-              p.spacing-none.leading
-                = link_to speaker_path("ryan-harasyn"), class: "white" do
-                  | Fostering Digital Craftsmanship
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Ryan Harasyn
-              p.spacing-none
-                = link_to speaker_path("jake-cook"), class: "white" do
-                  | Digital Marketing: A User-First Approach
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Jake Cook
-          tr
-            td.align-right.padding-light.valign-top 10:45am
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("devin-liddell"), class: "white" do
-                  | Breaking the Law: Lessons from the Underworld on Design and Innovation
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Devin Liddell
-              p.spacing-none
-                = link_to speaker_path("albert-shum"), class: "white" do
-                  | Personalizing Personal Computing: A Matter of Choice 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Albert Shum
-          tr
-            td.align-right.padding-light.valign-top 11:15pm
-            td.white.padding-light 15-minute break
-          tr
-            td.align-right.padding-light.valign-top 11:30pm
-            td.white.padding-light 
-              p.spacing-none
-                = link_to speaker_path("nick-finck"), class: "white" do
-                  strong Keynote:&nbsp;Nuances of UX 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Nick Finck
-          tr
-            td.align-right.padding-light.valign-top 12:30pm
-            td.white.padding-light Lunch Provided
-          tr
-            td.align-right.padding-light.valign-top 1:30pm
-            td.white.padding-light 
-              p.spacing-none
-                = link_to speaker_path("matt-conway"), class: "white" do
-                  | Design is Design 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Matt Conway
-          tr
-            td.align-right.padding-light.valign-top 2:15pm
-            td.white.padding-light 15-minute break
-          tr
-            td.align-right.padding-light.valign-top 2:30pm
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("jon-bell"), class: "white" do
-                  | Design While Shipping
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Jon Bell
-              p.spacing-none
-                = link_to speaker_path("david-lifson"), class: "white" do
-                  | Rapid Product Development Through User Research and 
-                  | Cross-functional Teams Workshop - Part 1 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;David Lifson 
-          tr
-            td.align-right.padding-light.valign-top 3:00pm
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("melissa-scott"), class: "white" do
-                  | Iterating to Success: Collaborative Product Development 
-                  em.slightly-small
-                    |  /&nbsp;Melissa Scott &amp; Barton McGuire
-              p.spacing-none
-                = link_to speaker_path("david-lifson"), class: "white" do
-                  | Rapid Product Development Through User Research and 
-                  | Cross-functional Teams Workshop - Part 2 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;David Lifson 
-          tr
-            td.align-right.padding-light.valign-top 3:30pm
-            td.white.padding-light 15-minute break
-          tr
-            td.align-right.padding-light.valign-top 3:45pm
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("bill-flora"), class: "white" do
-                  | Story Driven Design
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Bill Flora
-              p.spacing-none
-                = link_to speaker_path("erik-fadiman"), class: "white" do
-                  | Stop Showing Static Comps to Clients! Learn to Design in 
-                  | the Browser Workshop - Part 1
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Erik Fadiman
-          tr
-            td.align-right.padding-light.valign-top 4:15pm
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("michi-broman"), class: "white" do
-                  | Steering Clients in the Right Direction (or Turning North When Clients Head South) 
-                  em.slightly-small
-                    |  /&nbsp;Sarah Amos, Brigitt Rains, and Michi Broman
-              p.spacing-none
-                = link_to speaker_path("erik-fadiman"), class: "white" do
-                  | Stop Showing Static Comps to Clients! Learn to Design in 
-                  | the Browser Workshop - Part 2 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Erik Fadiman
-          tr
-            td.align-right.padding-light.valign-top 4:45pm
-            td.white.padding-light Presentations Conclude
+            = schedule_row start_time: "10:15", end_time: "10:45 am", slug: "jacob-cook", title: "Digital Marketing: A User-First Approach", name: "Jacob Cook", room: "LL", css_class: "block-a"
+
+            = schedule_row start_time: "10:45", end_time: "11:15 am", slug: "devin-liddell", title: "Breaking the Law: Lessons from the Underworld on Design and Innovation", name: "Devin Liddell", room: "GH", css_class: "block-b"
+
+            = schedule_row start_time: "10:45", end_time: "11:15 am", slug: "albert-shum", title: "Personalizing Personal Computing", name: "Albert Shum", room: "LL", css_class: "block-b"
+
+            = schedule_break("11:15", "11:30 am")
+
+            = schedule_row start_time: "11:30", end_time: "12:30 pm", slug: "nick-finck", title: "Keynote: Nuances of UX", name: "Nick Finck", room: "GH"
+
+            = schedule_lunch("12:30", "1:30 pm")
+
+            = schedule_row start_time: "1:30", end_time: "2:15 pm", slug: "matt-conway", title: "Design is Design", name: "Matt Conway", room: "GH"
+
+            = schedule_break("2:15", "2:30 pm")
+
+            = schedule_row start_time: "2:30", end_time: "3:00 pm", slug: "jon-bell", title: "Design While Shipping", name: "Jon Bell", room: "GH", css_class: "block-a"
+
+            = schedule_row start_time: "2:30", end_time: "3:30 pm", slug: "david-lifson", title: "Rapid Product Development Through User Research and Cross-functional Teams", name: "David Lifson", room: "LL", css_class: "block-a"
+
+            = schedule_row start_time: "3:00", end_time: "3:30 pm", slug: "melissa-scott", title: "Iterating to Success: Collaborative Product Development", name: "Melissa Scott &amp; Barton McGuire", room: "GH", css_class: "block-a"
+
+            = schedule_break("3:30", "3:45 pm")
+
+            = schedule_row start_time: "3:45", end_time: "4:15 pm", slug: "bill-flora", title: "Story Driven Design", name: "Bill Flora", room: "GH", css_class: "block-b"
+
+            = schedule_row start_time: "3:45", end_time: "4:45 pm", slug: "erik-fadiman", title: "Workshop: Stop Showing Static Comps to Clients! Learn to Design in the Browser", name: "Erik Fadiman", room: "LL", css_class: "block-b"
+
+            = schedule_row start_time: "4:15", end_time: "4:45 pm", slug: "michi-broman", title: "Steering Clients in the Right Direction (or Turning North When Clients Head South) ", name: "Sarah Amos, Brigitt Rains, and Michi Broman", room: "GH", css_class: "block-b"
 
     hr.white
     p.white.margin-none
@@ -302,143 +203,41 @@
       .col-sm-12.speaker-column
         p.white.spacing-medium Saturday, June 21
         table.sans-serif.bold.small.straight-black.full-width.align-left.spacing-loose.speaker-table
-          tr
-            td.align-right.padding-light.width-120 8:00am
-            td.white.padding-light Registration and coffee
-          tr
-            td.align-right.padding-light.valign-top 9:00am
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("thomas-wendt"), class: "white" do
-                  | Design for Dasein 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Thomas Wendt
-              p.spacing-none
-                = link_to speaker_path("nathan-brutzman"), class: "white" do
-                  | I saw what you did there…but I don’t understand. (why talking to customers matters) 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Nathan Brutzman
-          tr
-            td.align-right.padding-light.valign-top 9:30am
-            td.white.padding-light
-              p.spacing-none.leading
-                = link_to speaker_path("phillip-hunter"), class: "white" do
-                  | Toward a New Understanding of Designing for Experience 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Phillip Hunter
-              p.spacing-none
-                = link_to speaker_path("carol-a-taylor"), class: "white" do
-                  | Inspecting the Music  Seeker: An Ethnographic Look at the Digital Music Lifestyle 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Carol A. Taylor
-          tr
-            td.align-right.padding-light.valign-top 10:00am
-            td.white.padding-light 15-minute break
-          tr
-            td.align-right.padding-light.valign-top 10:15am
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("deidre-kolarick"), class: "white" do
-                  | Keeping the U in UX: Research strategies for cross-disciplinary UX teams
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Deidre Kolarick
-              p.spacing-none
-                = link_to speaker_path("dale-sande"), class: "white" do
-                  | Git for Everyone Workshop - Part 1
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Dale Sande 
-          tr
-            td.align-right.padding-light.valign-top 10:45am
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("marcy-sutton"), class: "white" do
-                  | Accessibility and the Modern Web 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Marcy Sutton
-              p.spacing-none
-                = link_to speaker_path("dale-sande"), class: "white" do
-                  | Git for Everyone Workshop - Part 2 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Dale Sande 
-          tr
-            td.align-right.padding-light.valign-top 11:15pm
-            td.white.padding-light 15-minute break
-          tr
-            td.align-right.padding-light.valign-top 11:30pm
-            td.white.padding-light 
-              p.spacing-none
-                = link_to speaker_path("darrel-rhea"), class: "white" do
-                  strong Keynote:&nbsp;
-                  | Catalysts for Change: The New Expectations for Design Leadership 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Darrel Rhea
-          tr
-            td.align-right.padding-light.valign-top 12:30pm
-            td.white.padding-light Lunch Provided
-          tr
-            td.align-right.padding-light.valign-top 1:15pm
-            td.white.padding-light 
-              p.spacing-none
-                = link_to speaker_path("jennifer-dewalt"), class: "white" do
-                  | How I Learned to Code by Making 180 Websites in 180 Days 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Jennifer Dewalt
-          tr
-            td.align-right.padding-light.valign-top 1:45pm
-            td.white.padding-light 15-minute break
-          tr
-            td.align-right.padding-light.valign-top 2:00pm
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("jenny-mullins"), class: "white" do
-                  | Why pixel perfect isn't so perfect 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Jenny Mullins
-              p.spacing-none
-                = link_to speaker_path("yingzhao-liu"), class: "white" do
-                  | Intercultural Communication Workshop - Part 1 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Yingzhao Liu
-          tr
-            td.align-right.padding-light.valign-top 2:30pm
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("elisha-terada"), class: "white" do
-                  | Efficient Team Development Workflow 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Elisha Terada
-              p.spacing-none
-                = link_to speaker_path("yingzhao-liu"), class: "white" do
-                  | Intercultural Communication Workshop - Part 2 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Yingzhao Liu
-          tr
-            td.align-right.padding-light.valign-top 3:00pm
-            td.white.padding-light 15-minute break
-          tr
-          tr
-            td.align-right.padding-light.valign-top 3:15pm
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("jody-rodgers"), class: "white" do
-                  | Collaboration: It's super easy, and we have the scars to prove it! 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Jody Rodgers
-              p.spacing-none
-                | IxDA Workshop - Part 1
-          tr
-            td.align-right.padding-light.valign-top 3:45pm
-            td.white.padding-light 
-              p.spacing-none.leading
-                = link_to speaker_path("ash-bhoopathy"), class: "white" do
-                  | Mastering Metaphor 
-                  em.slightly-small.nowrap
-                    |  /&nbsp;Ash Bhoopathy
-              p.spacing-none
-                | IxDA Workshop - Part 2
-          tr
-            td.align-right.padding-light.valign-top 4:15pm
-            td.white.padding-light Presentations Conclude
+          = render partial: "schedule_legend"
+
+          tbody
+            = schedule_break("8:00", "9:00 am", "Registration and coffee")
+
+            = schedule_row start_time: "9:00", end_time: "9:30 am", slug: "thomas-wendt", title: "Design for Dasein", name: "Thomas Wendt", room: "GH", css_class: "block-a"
+            = schedule_row start_time: "9:00", end_time: "9:30 am", slug: "nathan-brutzman", title: "I saw what you did there…but I don’t understand. (why talking to customers matters)", name: "Nathan Brutzman", room: "LL", css_class: "block-a"
+
+            = schedule_row start_time: "9:30", end_time: "10:00 am", slug: "phillip-hunter", title: "Toward a New Understanding of Designing for Experience", name: "Phillip Hunter", room: "GH", css_class: "block-b"
+            = schedule_row start_time: "9:30", end_time: "10:00 am", slug: "carol-a-taylor", title: "Inspecting the Music  Seeker: An Ethnographic Look at the Digital Music Lifestyle", name: "Carol A. Taylor", room: "LL", css_class: "block-b"
+
+            = schedule_break("10:00", "10:15 am")
+
+            = schedule_row start_time: "10:15", end_time: "10:45 am", slug: "deidre-kolarick", title: "Keeping the U in UX: Research strategies for cross-disciplinary UX teams", name: "Deidre Kolarick", room: "GH", css_class: "block-a"
+            = schedule_row start_time: "10:15", end_time: "11:15 am", slug: "dale-sande", title: "Workshop: Rapid Product Development Through User Research and Cross-functional Teams", name: "David Lifson", room: "LL", css_class: "block-a"
+            = schedule_row start_time: "10:45", end_time: "11:15 am", slug: "marcy-sutton", title: "Accessibility and the Modern Web", name: "Marcy Sutton", room: "GH", css_class: "block-a"
+
+            = schedule_break("11:15", "11:30 am")
+
+            = schedule_row start_time: "11:30", end_time: "12:15 pm", slug: "darrel-rhea", title: "Keynote: Catalysts for Change: The New Expectations for Design Leadership", name: "Darrel Rhea", room: "GH"
+
+            = schedule_lunch("12:15", "1:15 pm")
+
+            = schedule_row start_time: "1:15", end_time: "1:45 pm", slug: "jennifer-dewalt", title: "How I Learned to Code by Making 180 Websites in 180 Days", name: "Jennifer Dewalt", room: "GH"
+
+            = schedule_break("1:45", "2:00 pm")
+
+            = schedule_row start_time: "2:00", end_time: "2:30 pm", slug: "jenny-mullins", title: "Why pixel perfect isn't so perfect", name: "Jenny Mullins", room: "GH", css_class: "block-b"
+            = schedule_row start_time: "2:00", end_time: "3:00 pm", slug: "yingzhao-liu", title: "Workshop: Intercultural Communication", name: "Yingzhao Liu", room: "LL", css_class: "block-b"
+            = schedule_row start_time: "2:30", end_time: "3:00 pm", slug: "elisha-terada", title: "Efficient Team Development Workflow", name: "Elisha Terada", room: "GH", css_class: "block-b"
+
+            = schedule_break("3:00", "3:15 pm")
+
+            = schedule_row start_time: "3:15", end_time: "3:45 pm", slug: "jody-rodgers", title: "Collaboration: It's super easy, and we have the scars to prove it!", name: "Jody Rodgers", room: "LL"
+            = schedule_row start_time: "3:45", end_time: "4:15 pm", slug: "ash-bhoopathy", title: "Mastering Metaphor ", name: "Ash Bhoopathy", room: "GH"
 
 #synopsis.bg-white.padding-extra-loose
   .width-screen

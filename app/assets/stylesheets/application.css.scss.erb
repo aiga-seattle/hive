@@ -486,14 +486,13 @@ em {
 
 .speaker-column {
   .speaker-table {
-    max-width: 703px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    font-size: 75%;
+    font-weight: 700;
 
     @extend .sans-serif;
-    @extend .bold;
     @extend .small;
     @extend .straight-black;
     @extend .full-width;
@@ -506,23 +505,82 @@ em {
       padding-bottom: 0.5em; 
     }
 
+    .schedule_row {
+      border-bottom: #1aa9ac solid 3px;
+    }
+
     .block-a {
       background-color: rgb(76, 195, 197);
     }
 
+    .block-b {
+      background-color: rgb(39, 182, 185);
+    }
+
+    .room-GH {
+      background-color: black;
+      color: white;
+    }
+
+    .room-LL {
+      color: black;
+      background-color: white;
+    }
+
+    .room {
+      border-radius: 100%;
+      display: inline-block;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+      padding-top: 5px;
+      font-size: 85%;
+    }
+
+    .room-assignment{
+      width: 28px;
+      vertical-align: center;
+    }
+
+
     .period {
-      padding: 8px;
+      padding: 8px 10px;
       vertical-align: top;
-      text-align: right
+      text-align: right;
+      width: 136px;
     }
 
     .detail {
       @extend .white;
+      padding: 8px 10px;
       width: 414px;
     }
 
-    .room {
+    caption {
+      dl {
+        background-color: #009da0;
+        border-radius: 20px;
+        padding: 3px;
+        width: 340px;
+      }
 
+      dt, dd { 
+        display: inline;
+      }
+
+      dd {
+        color: white;
+        font-weight: normal;
+        font-size: 90%;
+        padding-left: 7px;
+      }
+
+      dl:first-child dd {
+        margin-right: 20px;
+      }
     }
+
+    
   }
 }

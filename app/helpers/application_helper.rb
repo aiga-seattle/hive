@@ -17,8 +17,12 @@ module ApplicationHelper
     render partial: "schedule_row", locals: locals
   end
 
-  def schedule_break(start_time, end_time)
-    render partial: "schedule_row_break", locals: {start_time: start_time, end_time: end_time}
+  def schedule_break(start_time, end_time, copy="15-minute break")
+    render partial: "schedule_row_break", locals: {start_time: start_time, end_time: end_time, copy: copy}
+  end
+
+  def schedule_lunch(start_time, end_time)
+    schedule_break(start_time, end_time, "Lunch Provided")
   end
 
 end
