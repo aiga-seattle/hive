@@ -9,7 +9,7 @@ module ApplicationHelper
   end
 
   def format_period(start_time, end_time)
-    "#{start_time}&nbsp;-&nbsp;#{end_time}".html_safe
+    "#{start_time}–#{end_time.gsub(" ", "")}".html_safe
   end
 
   def schedule_row(locals = {})
