@@ -306,7 +306,10 @@ speaker_info = {
   headshot_filename: "DaleSande.jpg",
   position: 16,
   talk_title: "Git for Everyone Workshop",
-  talk_description: "TBA",
+  talk_description: "Unless you have been living in a cave, Git is everywhere. Creative or engineering, you have directly encountered or will encounter Git in the workplace. A common misconception as well is that Git is only for teams? Regardless of work style or team size, Git is the tool that everyone should be using.<br/><br/>
+Dale Sande, UX Design and Development senior instructor with Code Fellows, will introduce you to Git and get you up to speed on concepts and workflows in no time.<br/><br/>
+Discover how working in the command line isn't all that scary. Understand how to move between projects with just a few key strokes. Visually experience what Git is doing behind the scenes. Gain confidence with the steps involved for a common Git branching strategy. Cloning isn't just for sheep and galactic empires.<br/><br/>
+Together we will all create and share Github repositories and understand why Groundhog's Day is the best Git movie EVER!".html_safe,
   talk_time: DateTime.new(2014, 06, 21, 10, 15, 0, "-700"),
   talk_room: "Downstairs",
   talk_type: "workshop"
