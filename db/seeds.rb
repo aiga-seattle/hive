@@ -191,7 +191,11 @@ speaker_info = {
   headshot_filename: "nathanBrutzman.jpg",
   position: 10,
   talk_title: "I saw what you did there…but I don’t understand. (why talking to customers matters)",
-  talk_description: "TBA",
+  talk_description: "How do I find users? What would I ever say? Does this belt go with my Keds™? Fuck it. Why does this matter? These are common questions we all face in this day and age as designers and developers of the new frontier. <br/><br/>
+How do you find a willing set of users that will provide you the critical feedback you need? <br/><br/>
+Fundamentally, we're all humans (*polite gasp*). We all want better experiences and ways to make living easier. We can't go it alone. We need to venture out and gather honest, open feedback from the people that will ultimately benefit from our ideas. <br/><br/>
+This session will provide you with a starting point to meeting, greeting, charming and building those relationships with the people that matter most: your users.<br/><br/>
+".html_safe,
   talk_time: DateTime.new(2014, 06, 21, 9, 0, 0, "-700"),
   talk_room: "Downstairs",
   talk_type: "breakout"
@@ -267,8 +271,7 @@ speaker_info = {
   headshot_filename: "AmosRainsBroman.jpg",
   position: 14,
   talk_title: "Steering Clients in the Right Direction (or Turning North When Clients Head South)",
-  talk_description: "Michi Broman / Blink UX
-The greatest projects are delivered when client and project teams work in a collaborative partnership. Join the Project Managers from Blink — Michi Broman, Sarah Amos and Brigitt Rains — for an entertaining session where you'll learn about: <br/>getting your design approved and built; <br/> getting back on track when you miss the mark; <br/> why hand-offs are so important and how you can make them better; and <br/> tailoring your presentation to the audience",
+  talk_description: "The greatest projects are delivered when client and project teams work in a collaborative partnership. Join the Project Managers from Blink — Michi Broman, Sarah Amos and Brigitt Rains — for an entertaining session where you'll learn about: <br/>getting your design approved and built; <br/> getting back on track when you miss the mark; <br/> why hand-offs are so important and how you can make them better; and <br/> tailoring your presentation to the audience",
   talk_time: DateTime.new(2014, 06, 20, 16, 15, 0, "-700"),
   talk_room: "Great Hall",
   talk_type: "breakout"
