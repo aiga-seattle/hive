@@ -39,7 +39,7 @@ speaker_info = {
   headshot_filename: "DarrelRhea.jpg",
   position: 2,
   talk_title: "Catalysts for Change: The New Expectations for Design Leadership",
-  talk_description: "TBD",
+  talk_description: "How have changes in the world of business, strategy and design changed expectations and requirements for how we lead as designers? What behaviors can you change now to increase the value of your contributions? Darrel will share the answers to these questions and the insights he has gained through years of consulting for top companies, using design to bring out greatness.",
   talk_time: DateTime.new(2014, 06, 21, 11, 30, 0, "-700"),
   talk_room: "Great Hall",
   talk_type: "keynote"
