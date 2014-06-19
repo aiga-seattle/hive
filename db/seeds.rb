@@ -481,7 +481,7 @@ speaker_info = {
   bio: %{Zachary Smith is a Director of Technology & Innovation and mischief maker at Substantial, a digital product studio committed to building brilliant technology experiences. When not bending computers to his will, Zachary enjoys riding and racing bicycles, cross country skiing, spending time with his wife & daughter and trying his best to stay out of trouble. He has been accused of being a coffee snob but blames Seattle for this. He is a mid-western transplant. He is a fairly recent football fan and a long-time ice hockey fan. He believes that technology has the ability to dramatically change the world, that designers & developers have a truly amazing opportunity to share new ideas in meaningful ways, and that there is a better way to do just about anything.
   },
   slug: "zachary-smith",
-  headshot_filename: "blank.jpg",
+  headshot_filename: "zacharySmith.jpg",
   position: 25,
   talk_title: "Fostering Digital Craftsmanship",
   talk_description: "We know intuitively whether something “sucks” or not, but how can we really define what a quality product is in the digital realm? Whether it’s writing code that’s maintainable, modular, and reusable, or designing for both high usability and delight, as product builders we now have to concern ourselves with areas beyond our particular discipline. How can we stretch ourselves—and our teams—to bring the same level of polish as our heroes in the physical product realm? How can you instill this mindset throughout your organization? How do you balance creativity and innovation with reality and pragmatism? This talk will discuss how we can define what quality is and introduce a cross-disciplinary framework that can guide you and your teams to excellence in your work.",
